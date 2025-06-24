@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HTML FORM</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		
+	</style>
+</head>
+<body>
+
+	<form action="">
+		<table cellspacing="2" cellpadding="10" align="center">
+		    <caption><h2><b>CONTACT FORM</b></h2></caption>
+
+			<tr>
+				<td><label>Full Name</label></td>
+				<td><input type="text" required pattern="[A-Z-a-z]{3,9}" placeholder="Full Name"></td>
+			</tr>
+
+			<tr>
+				<td><label>Email</label></td>
+				<td><input type="Email" pattern="[a-z0-9]+@+[a-z]+.+[a-z]{2,3}$" placeholder="Email"></td>
+			</tr>
+
+			<tr>
+				<td><label>Phone Number</label></td>
+				<td><input type="tel" required pattern="[789][0-9]{9}" placeholder="Phone Number" maxlength="10"></td>
+			</tr>
+
+			<tr>
+				<td>Subject</td>
+				<td><select name="" id="">
+					<option value="" hidden>Select Subject</option>
+					<option value="">ENGLISH</option>
+					<option value="">MATHS</option>
+					<option value="">SCIENCE</option>
+					<option value="">CHEMESTRY</option>
+				</select></td>
+			</tr>
+
+			<tr>
+				<td>Message</td>
+				<td><textarea cols="30" rows="4" required>Message</textarea></td>
+			</tr>
+
+			<tr>
+				<td><button>Submit</button></td>
+			</tr>
+		</table>
+	</form>
+
+</body>
+</html>
