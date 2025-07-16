@@ -1,20 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Document</title>
+	<title>Navbar</title>
 	<style type="text/css">
 		.list .nav{
 			display: inline-block;
-			background-color: lightcoral;
+			background-color: lightcyan;
 			padding: 10px 20px;
-			margin: 200px auto;
 			position: relative;
-			
 		}
 
 		.navlist{
 			position: absolute;
-			background-color: aqua;
+			background-color: lightcoral;
 			top: 100%;
 			left: 0%;
 			padding: 0%;
@@ -25,14 +23,16 @@
 			padding: 10px;
 			border: 2px solid;
 			list-style: none;
+
 		}
 
 		.nav:hover .navlist{
 			display: block;
 		}
 
+		.navlist 2{}
+		
 	</style>
-
 </head>
 <body>
 
@@ -41,9 +41,16 @@
 		<li class="nav">Home
 			<ul class="navlist">
 				<li>Home 1</li>
+			<ul class="navlist 2">
+				<li>Home 5</li>
+				<li>Home 6</li>
+				<li>Home 7</li>
+			</ul>
+
 				<li>Home 2</li>
 				<li>Home 3</li>
 				<li>Home 4</li>
+
 			</ul>
 		</li>
 		<li class="nav">About
@@ -51,8 +58,6 @@
 				<li>About 1</li>
 				<li>About 2</li>
 				<li>About 3</li>
-				<li>About 4</li>
-
 			</ul>
 		</li>
 		<li class="nav">Contact
@@ -60,7 +65,10 @@
 				<li>Contact 1</li>
 				<li>Contact 2</li>
 				<li>Contact 3</li>
+				<li>Contact 4</li>
 			</ul>
+
+
 		</li>
 		<li class="nav">Help</li>
 

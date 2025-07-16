@@ -1,0 +1,307 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffes-Time</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/media.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Grand+Hotel&family=Manufacturing+Consent&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Playwrite+IN:wght@100..400&family=Playwrite+VN:wght@100..400&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Underdog&display=swap" rel="stylesheet">
+<style type="text/css">
+    
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* resuse */
+.container {
+    width: 90%;
+    margin: 0 auto;
+    /* position: relative; */
+}
+
+/* header start */
+#header {
+    background: rgb(34, 40, 49);
+    position: relative;
+    
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.nav-list .nav-item {
+    display: inline-block;
+    padding: 0px 10px;
+}
+
+.nav-item .nav-a {
+    font-size: 25px;
+    letter-spacing: 1px;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: "Montserrat";
+    text-decoration: none;
+
+}
+
+.header-content {
+    color: #ffffff;
+    padding: 100px 0;
+}
+
+.header-content .header-h1 {
+    font-size: 153px;
+    letter-spacing: 6px;
+    font-weight: 400;
+    font-family: "Grand Hotel", cursive;
+    font-style: normal;
+}
+
+.header-content .header-h3 {
+    font-size: 33px;
+    letter-spacing: 2px;
+    font-weight: 700;
+    font-family: "Montserrat";
+    margin: 20px 0;
+}
+
+.header-content .header-p {
+    width: 38%;
+    font-size: 15px;
+    margin: 20px 0;
+    letter-spacing: 1px;
+    font-weight: 400;
+    font-family: "Montserrat";
+}
+
+.btn-header {
+    font-size: 33px;
+    line-height: 28px;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: "Montserrat";
+    background: rgb(41, 161, 156);
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+.img-right img{
+    width: 700px;
+    position: absolute;
+    top: 100px;
+    right: 0;
+}
+.icon .bar {
+    font-size: 25px;
+    color: #ffffff;
+    font-weight: 700;
+    display: none;
+}
+
+@media only screen and (max-width:1200px) {
+    
+}
+@media only screen and (max-width:992px) {
+   
+}
+@media only screen and (max-width:768px) {
+    .icon .bar{
+        display: block;
+    }
+    .nav-list{
+        display: none;
+    }
+    .img-right img{
+        width: 400px;
+        top: 0;
+        left: 0;
+        z-index: 1;
+    }
+    .header-content .header-p{
+        width: 60%;
+    }
+    .header-content{
+        padding: 20px 0px;
+    }
+    
+   
+}
+@media only screen and (max-width:567px) {
+    
+}
+/* header end */
+
+
+/* sec1 start............................................... */
+
+        #sec1 {
+    background: rgb(41, 161, 156);
+    padding: 30px 0;
+}
+
+#sec1 .row {
+    display: flex;
+}
+
+#sec1 .row .col {
+    /* border: 2px solid; */
+    width: 50%;
+}
+
+.sec1-h1 {
+    font-size: 145px;
+    letter-spacing: 5px;
+    color: #ffffff;
+    font-weight: 400;
+    font-family: "Grand Hotel";
+}
+
+.btn-sec1 {
+    font-size: 33px;
+    line-height: 28px;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: "Montserrat";
+    background: rgb(34, 40, 49);
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    margin-top: 40px;
+}
+
+.img-sec1 {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.sec1-p {
+    font-size: 24px;
+    letter-spacing: 1px;
+    color: #ffffff;
+    font-weight: 400;
+    font-family: "Montserrat";
+    text-align: right;
+}
+
+@media only screen and (max-width:1200px) {
+    
+}
+@media only screen and (max-width:992px) {
+   
+}
+@media only screen and (max-width:768px) {
+    #sec1 .row {
+    display: flex;
+    flex-direction: column;
+}
+.btn-sec1 {
+    font-size: 20px;
+    line-height: 28px;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: "Montserrat";
+    background: rgb(34, 40, 49);
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    margin-top: 40px;
+}
+
+#sec1 .row .col {
+    /* border: 2px solid; */
+    width: 100%;
+}
+.sec1-p{
+    text-align: center;
+}
+
+   
+   
+}
+@media only screen and (max-width:567px) {
+    
+}
+
+/* sec1 end......................................................... */
+
+</style>
+</head>
+
+<body>
+
+    <!-- header start -->
+    <header id="header">
+        <div class="container">
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li class="nav-item"><a class="nav-a" href="">Home</a></li>
+                    <li class="nav-item"><a class="nav-a" href="">About</a></li>
+                    <li class="nav-item"><a class="nav-a" href="">Menu</a></li>
+                    <li class="nav-item"><a class="nav-a" href="">Blog</a></li>
+                    <li class="nav-item"><a class="nav-a" href="">Shop</a></li>
+                    <li class="nav-item"><a class="nav-a" href="">Contact</a></li>
+                </ul>
+                    <div class="icon">
+                       <i class="fa-solid fa-bars bar"></i>
+                    </div>
+                <div class="logo">
+                    <img src="C:\Users\Yash Gondaliya\OneDrive\Desktop\Front-end 10 june\coffee\images\Logo.png" alt="">
+                </div>
+            </nav>
+            <div class="header-content">
+                <h1 class="header-h1">Coffee Time</h1>
+                <h3 class="header-h3">YOUR HEADLINE</h3>
+                <p class="header-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua.
+                </p>
+                <button class="btn-header">Order now</button>
+            </div>
+            <div class="img-right">
+                <img src="C:\Users\Yash Gondaliya\OneDrive\Desktop\Front-end 10 june\coffee\images\header.png">
+            </div>
+        </div>
+    </header>
+    <!-- header end -->
+
+
+     <div id="sec1">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h1 class="sec1-h1">Black Coffees</h1>
+                    <button class="btn-sec1">Order now</button>
+                </div>
+                <div class="col">
+                    <div class="img-sec1">
+                        <img src="C:\Users\Yash Gondaliya\OneDrive\Desktop\Front-end 10 june\coffee\images\sec1.png" height="100%" width="100%" alt="">
+                    </div>
+                    <p class="sec1-p">Lorem ipsum dolor sit amet, consectetur adipis
+                        cing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad
+                        minim veniam, quis nostrud exercitation </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
+

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Elite box</title>
+	<style type="text/css">
+		.main{
+			height: 250px;
+			width: 250px;
+			border: 2px solid black;
+			margin: 200px auto;
+			position: relative;
+			overflow: hidden;
+		}
+		
+		.right{
+			height: 250px;
+			width: 250px;
+			/* border: 2px solid black; */
+			background-color: beige;
+			position: absolute;
+			left: 250px;
+			bottom: 250px;
+			transition: 1s;
+			}
+
+			.main:hover .right{
+				left: 0px;
+				bottom: 0px;
+			}
+
+			.left{
+			height: 250px;
+			width: 250px;
+			/* border: 2px solid black; */
+			background-color: beige;
+			position: absolute;
+			right: 250px;
+			top: 250px;
+			transition: 1s;
+			}
+
+			.main:hover .left{
+				right: 0px;
+				top: 0px;
+			}
+	</style>
+</head>
+<body>
+
+	<div class="main">
+	<div class="right"></div>
+	<div class="left"></div>
+	</div>
+
+</body>
+</html>

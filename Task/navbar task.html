@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Navbar Task</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		.list .nav{
+			display: inline-block;
+			background-color: cyan;
+			position: relative;
+			/* left: 250px;
+			top: 50px; */
+		}
+		.navlist{
+			position: absolute;
+			background-color: aqua;
+			top: 100%;
+			left: 250px;
+			padding: 0%;
+			display: none;
+		}
+		.navlist li{
+			padding:0px 50px;
+			border: 2px solid;
+			list-style: none;
+		}
+		 .list .nav::before{
+            content: "";
+            height: 5px;
+            width: 100%;
+            background: black;
+            position: absolute;
+            top: 100%;
+            left: 0; 
+            transition: 0.5s;
+            transform: scaleX(0);
+        }
+
+         .nav:hover::before{
+            transform: scaleX(1);
+        }
+     
+        .nav:hover .navlist{
+			display: block;
+		}
+
+		ul li a{
+			text-decoration: none;
+			color: black;
+			padding: 0px 20px;
+			font-size: 23px;
+		}
+	</style>
+</head>
+<body>
+
+	<ul class="list">
+		<li class="nav"><a href="">Home</a></li>
+		<li class="nav"><a href="">About</a></li>
+		<li class="nav"><a href="">Mens Wear</a>
+			<ul class="navlist">
+				<li>About 1</li>
+				<li>About 1</li>
+				<li>About 1</li>
+				<li>About 1</li>
+				<li>About 1</li>
+				<li>About 1</li>
+				<li>About 1</li>
+			</ul>
+		</li>
+		<li class="nav"><a href="">Womens wear</a></li>
+		<li class="nav"><a href="">Short Codes</a></li>
+		<li class="nav"><a href="">Contact</a></li>
+
+	</ul>
+
+</body>
+</html>
