@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box_Model</title>
+    <link rel="stylesheet" href="/CSS and CSS3/LAB/css_box.css">
+    <style type="text/css">
+        *{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: black;
+}
+
+.main{}
+
+.card{
+    margin: 20px auto;
+    margin-top: 100px;
+    height: 500px;
+    width: 300px;
+    border-radius: 10px;
+    position: relative;
+    /* background: rgb( #f9ce34, #ee2a7b ,#6228d7); */
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);}
+.card-name{
+    font-size: 26px;
+    color: rgb(29, 29, 65);
+    background: white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 30px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.card-img{
+    position: absolute;
+    top: 25%;
+    right: 30%;
+    height: 100px;
+    width: 120px;
+}
+.img{
+    border: 4px solid white;
+    border-radius: 50%;
+}
+.card-p{
+    margin: 50% 20px;
+    margin-bottom: 0;
+    padding: 10px;
+    color: white;
+}
+.row{
+    display: flex;
+    padding: 20px;
+}
+.col{
+    width: 33.33%;
+    
+}
+.col-h3{
+    color: white;
+    text-align: center;
+    text-transform: capitalize;
+}
+.button{
+    text-align: center;
+}
+.card-btn{
+    font-size: 20px;
+    padding: 10px 20px;
+    border-radius: 40px;
+    border: none;
+    margin: 0px 10px;
+    text-transform: capitalize;
+}
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="card">
+            <h1 class="card-name">Yash Gondaliya</h1>
+            <p class="card-p">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae a fugiat necessitatibus, ullam
+                dolores
+                quia beatae recusandae eligendi quo voluptate!
+            </p>
+            <div class="row">
+                <div class="col">
+                    <h3 class="col-h3">108</h3>
+                    <h3 class="col-h3">posts</h3>
+                </div>
+                <div class="col">
+                    <h3 class="col-h3">457</h3>
+                    <h3 class="col-h3">followers</h3>
+                </div>
+                <div class="col">
+                    <h3 class="col-h3">229</h3>
+                    <h3 class="col-h3">following</h3>
+                </div>
+            </div>
+            <div class="button">
+                <button style="color: white;background: blue;" class="card-btn">follow</button>
+                <button class="card-btn">message</button>
+            </div>
+            <div class="card-img">
+                <img class="img" height="100%" width="100%"
+                    src="https://tse2.mm.bing.net/th/id/OIP.vfyQI4x816mIw2owhH1qoQHaEP?pid=Api&P=0&h=220" alt="">
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
