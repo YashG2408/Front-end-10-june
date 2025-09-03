@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advance Js Practice</title>
+</head>
+<body>
+
+    <script>
+        class blue{
+            x = function sum(a,b){
+                console.log("sum =>", a+b,)
+                document.writeln("sum =>",a+b,"<br>")
+            }
+
+            y = function sub(){
+                let a = 48;
+                let b = 30;
+                console.log("sub =>",a-b)
+                document.writeln("sub =>",a-b,"<br>")
+            }
+
+            mul(a,b){
+                console.log("mul =>",a*b);
+                document.writeln("mul =>",a*b,"<br>")
+            }
+
+            divi(){
+                let a =20;
+                let b = 2;
+                console.log("divi =>",a/b)
+                document.writeln("divi =>",a/b,"<br>")
+            }
+        }
+
+        // console.log(blue)
+
+        const data = new blue
+        console.log(data)
+
+        data.x(30,30)
+        data.x(30,90)
+        data.y()
+        data.y()
+        data.y()
+        data.divi()
+        data.divi()
+        data.divi()
+        data.mul(20,10)
+        data.divi(3.5)
+
+
+
+
+
+
+
+    </script>
+    
+</body>
+</html>

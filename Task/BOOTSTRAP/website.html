@@ -1,0 +1,1899 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>megapack</title>
+	<link rel="shortcut icon" href="https://builder.pixfort.com/core/images/favicon.png">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+		.header{
+			width: 100%;
+			height: auto;
+			background: black;
+		}
+		.header-sub{
+			width: 80%;
+			height: auto;
+			margin: 0px auto;
+			padding: 100px 0px;
+			display: flex;
+			justify-content: space-evenly;
+		}
+		.text{
+			color: white;
+			font-size: 40px;
+			font-family: arial;
+			margin: 10px 0px;
+			
+
+		}
+		.text1{
+			color: white;
+			font-size: 40px;
+			font-family: arial;
+			margin: 10px 0;
+			
+		}
+		.btn{
+			background: #444;
+			color: white;
+			padding: 8px;
+			font-family: arial;
+			font-weight: bold;
+			border: none;
+			border-radius: 10px;
+			margin-top: 14px;
+
+		}
+		.lorem{
+			text-align: justify;
+			color: white;
+			margin-top: 17px;
+			font-family: arial;
+			line-height: 22px;
+			
+		}
+		.btn1{
+			background: #f7941d;
+			color: white;
+			font-size: 14px;
+			font-weight: bold;
+			text-transform: uppercase;
+			padding: 14px 20px;
+			border-radius: 30px;
+			border: none;
+			letter-spacing: 2px;
+			cursor: pointer;
+			margin-top: 24px;
+		}
+		.header-left{
+			margin-top: 160px;
+		}
+		.text3{
+			color: white;
+			text-transform: uppercase;
+			margin-left: 270px;
+			position: relative;
+			top: 45px;
+		}
+		nav{
+			width: 80%;
+			display: flex;
+			justify-content: flex-end;
+			position: relative;
+			top: 8px;
+
+		}
+		nav ul{
+			display: flex;
+			list-style: none;
+		}
+		nav ul li{
+			padding: 10px;
+			color: white;
+			font-size: 18px;
+			font-family: arial;
+		}
+		nav ul li a{
+			text-decoration: none;
+			font-weight: bolder;
+			color: white;
+		}
+		nav ul li a:hover{
+			color: gray;
+		}
+		#span{
+			font-weight: lighter;
+		}
+		.fa15{
+			color: white;
+			font-size: 20px;
+			margin: 10px;
+			cursor: pointer;
+		}
+		.fa15:hover{
+			color: gray;
+		}
+		.main{
+			width: 80%;
+			height: auto;
+			margin: 0px auto;
+			padding: 100px 0px;
+			display: flex;
+			justify-content: space-evenly;
+			line-height: 25px;
+			/right: 100px;/
+		}
+		.child{
+			color: white;
+			position: relative;
+		}
+		.text4{
+			font-size: 24px;
+			font-family: arial;
+		}
+		.lorem1{
+			text-align: justify;
+			font-family: arial;
+		}
+		
+		.fa1{
+			position: absolute;
+			left: -80px;
+			font-size: 50px;
+		}
+		.fa2{
+			color: blue;
+		}
+		.fa3{
+			color: hotpink;
+		}
+		.fa4{
+			color: orange;
+		}
+		.section{
+			width: 100%;
+			height: auto;
+			background: #f4f4f4;
+		}
+		.section-sub{
+			widows: 80%;
+			height: auto;
+
+		}
+		.text5{
+			padding: 100px 0px;
+			margin: 0px auto;
+			margin-left: 270px;
+		}
+		.lorem2{
+			margin-left: 270px;
+			position: relative;
+			bottom: 80px;
+			font-family: arial;
+			line-height: 20px;
+		}
+		.main1{
+			width: 80%;
+			height: auto;
+			margin: 0px auto;
+			padding: 100px 0px;
+			display: flex;
+			justify-content: center;
+			grid-gap: 20px;
+			margin-right: 180px;
+
+		}
+		.child1{
+			width: 300px;
+			height: 250px;
+			background: white;
+			border-top: thick solid #1274e7;
+			border-width: 3px;
+			padding: 19px;
+
+		}
+		.child2{
+			width: 300px;
+			height: 250px;
+			background: white;
+			border-top: thick solid #00ffa8;
+			border-width: 3px;
+			padding: 19px;
+
+		}
+		.child3{
+			width: 300px;
+			height: 250px;
+			background: white;
+			border-top: thick solid #ff9800;
+			border-width: 3px;
+			padding: 19px;
+
+		}
+		.text6{
+			font-family: arial;
+			font-size: 24px;
+			font-weight: lighter;
+			position: relative;
+			top: 25px;
+			left: 30px;
+		}
+		.btn2{
+			background:  lightgray;
+			position: relative;
+			top: 35px;
+			left: 30px;
+			font-family: arial;
+		}
+		.lorem3{
+			text-align: justify;
+			position: relative;
+			top: 50px;
+			left: 30px;
+			font-family: arial;
+		}
+		.section2{
+			width: 100%;
+			height: auto;
+		}
+		.section-sub2{
+			width: 80%;
+			height: auto;
+		}
+		.text7{
+			padding: 100px 0px;
+			margin-left: 270px;
+			font-family: arial;
+		}
+		.lorem4{
+			margin-left: 270px;
+			position: relative;
+			bottom: 90px;
+			font-family: arial;
+		}
+		.box{
+			width: 80%;
+			height: auto;
+			margin: 0px auto;
+			padding: 100px 0px;
+			display: flex;
+			justify-content: space-evenly;
+			position: relative;
+			bottom: 100px;
+		}
+		.box1{
+			width: 250px;
+			height: 250px;
+			/background: lightgray;/
+		}
+		.box2{
+			width: 250px;
+			height: 250px;
+			/background: lightgray;/
+		}
+		.box3{
+			width: 250px;
+			height: 250px;
+			/background: lightgray;/
+		}
+		.fa5{
+			font-size: 40px;
+			color: #888;
+			background: white;
+		}
+		.text8{
+			color: #999;
+			margin-top: 20px;
+		}
+		.text9{
+			font-size: 15px;
+			font-family: arial;
+			font-weight: lighter;
+			background: #f4f4f4;
+			color: #888;
+			padding: 8px;
+			margin-top: 20px;	
+		}
+		.img{
+			position: relative;
+			left: 250px;
+			bottom: 100px;
+		}
+		.section3{
+			width: 100%;
+			height: auto;
+			background:  #f4f4f4;
+
+		}
+		.section-sub3{
+			width: 80%;
+			height: auto;
+		}
+		.text10{
+			padding: 100px 0px;
+			margin-left: 270px;
+			font-family: arial;
+		}
+		.lorem5{
+			margin-left: 270px;
+			position: relative;
+			bottom: 90px;
+			font-family: arial;
+		}
+		.section-left{
+			width: 250px;
+			height: 300px;
+			background: white;
+			margin-left: 270px;
+			border-top: thick solid orange;
+			border-width: 3px; 
+
+		}
+		.fa6{
+			font-size: 50px;
+			color: #888;
+			position: relative;
+			left: 20px;
+			top: 30px;
+		}
+
+		h3{
+			font-size: 20px;
+			font-family: 'Montserrat', sans-serif;
+			letter-spacing: 1px;
+			position: relative;
+			left: 20px;
+			top: 50px;
+		}
+		.btn3{
+			background: #f4f4f4;
+			color: #888;
+			padding: 3px;
+			font-family: arial;
+			border: none;
+			position: relative;
+			left: 20px;
+			top: 60px;
+		}
+		.lorem6{
+			position: relative;
+			left: 20px;
+			top: 70px;
+			font-family: arial;
+		}
+		.btn4{
+			width: 150px;
+			background: #f7941d;
+			color: white;
+			padding: 8px;
+			font-family: arial;
+			font-weight: bold;
+			padding: 10px;
+			border:none; ;
+			border-radius: 30px;
+			letter-spacing: 2px;
+			position: relative;
+			left: 20px;
+			top: 90px;
+		}
+		.section-right{
+			position: relative;
+			left: 550px;
+			top: -300px;
+		}
+		.section4{
+			width: 100%;
+			height: auto;
+			background:  black;
+			position: relative;
+			bottom: 100px;
+
+		}
+		.section-sub4{
+			width: 80%;
+			height: auto;
+		}
+		.text11{
+			padding: 100px 0px;
+			margin-left: 270px;
+			font-family: arial;
+			color: white;
+		}
+		.lorem7{
+			margin-left: 270px;
+			font-family: arial;
+			color: white;
+			position: relative;
+			bottom: 90px;
+			font-family: arial;
+		}
+		.main3{
+			width: 80%;
+			height: auto;
+			margin: 0px auto;
+			padding: 100px 0px;
+			display: flex;
+			justify-content: space-evenly;
+			position: relative;
+			bottom: 100px;
+		}
+		.child5{
+			width: 270px;
+			height: 550px;
+			background: #444;
+			border-top: thick solid #777;
+			border-width: 3px;
+		}
+		.child6{
+			width: 270px;
+			height: 550px;
+			background: #444;
+			border-top: thick solid orange;
+			border-width: 3px;
+		}
+		.child7{
+			width: 270px;
+			height: 550px;
+			background: #444;
+			border-top: thick solid #777;
+			border-width: 3px;
+		}
+		.text12{
+			color: white;
+			text-align: center;
+			position: relative;
+			top: 20px;
+		}
+		.text13{
+			color: #888;
+			position: relative;
+			left: 50px;
+		}
+		.t13{
+			color: orange;
+		}
+		.btn5{
+			background: #666;
+			color: #aaa;
+			font-family: arial;
+			font-weight: bold;
+			padding: 10px;
+			border:none;
+			border-radius: 30px;
+			letter-spacing: 2px;
+			position: relative;
+			left: 80px;
+			top: 80px;
+		}
+		.text14{
+			color: #888;
+			position: relative;
+			left: 50px;
+			top: 110px;
+		}
+		.text15{
+			color: #888;
+			position: relative;
+			left: 50px;
+			top: 140px;
+		}
+		.text16{
+			color: #888;
+			position: relative;
+			left: 70px;
+		    top: 165px;
+		}
+		.text17{
+			color: #888;
+			position: relative;
+			left: 130px;
+			top: 190px;
+		}
+
+		.t17{
+			left: 70px;
+		}
+
+		.t1{
+			left: 50px;
+		}
+
+		.text18{
+			color: #888;
+			position: relative;
+			left: 130px;
+			top: 220px;
+		}
+		.t18{
+			position: relative;
+			left: 70px;
+		}
+		.btn6{
+			width: 120px;
+			background: #666;
+			color: white;
+			position: relative;
+			left: 80px;
+			top: 250px;
+			font-family: arial;
+			border: none;
+			border-radius: 24px;
+			padding: 10px;
+		}
+		.btn7{
+			background: orange;
+		}
+		.lorem8{
+			margin-left: 270px;
+			color: white;
+			font-size: 18px;
+			position: relative;
+			bottom: 100px;
+		}
+		.btn8{
+			text-transform: uppercase;
+			font-family: arial;
+			font-size: 16px;
+			width: 190px;
+			background: #666;
+			color:  #888;
+			padding: 10px; 
+			border: none;
+			border-radius: 24px;
+			position: absolute;
+			left: 60%;
+			top: 88%;
+		}
+		.section5{
+			width: 100%;
+			height: auto;
+			background: #1274e7;
+			position: relative;
+			bottom: 100px;
+		}
+		.section-sub5{
+			width: 80%;
+			height: auto;
+		}
+		.text19{
+			font-family: arial;
+			margin-left: 270px;
+			padding: 100px 0px;
+			font-weight: lighter;
+			color: white;
+
+		}
+		.lorem9{
+			font-family: arial;
+			margin-left: 270px;
+			color: white;
+			position: relative;
+			bottom: 90px;
+			line-height: 24px;
+
+		}
+		.main4{
+			width: 80%;
+			height: auto;
+			margin: 0px auto;
+			padding: 100px 0px;
+			display: flex;
+			justify-content: space-between;
+			position: relative;
+			left: 140px;
+		}
+		.child11{
+			width: 250px;
+			height: 350px;
+			background: #1274e7;
+			text-align: center;
+			color: white;
+			font-size: 15px;
+			font-family: arial;
+			line-height: 24px;
+		}
+		.child12{
+			width: 250px;
+			height: 350px;
+			background: #5976eb;
+			text-align: center;
+			color: white;
+			font-size: 15px;
+			font-family: arial;
+			line-height: 24px;
+		}
+		.child13{
+			width: 250px;
+			height: 350px;
+			background: #1274e7;
+			text-align: center;
+			color: white;
+			font-size: 15px;
+			font-family: arial;
+			line-height: 24px;
+		}
+		.text20{
+			text-align: center;
+			font-size: 20px;
+			font-family: arial;
+			position: relative;
+			top: 24px;
+			font-weight: bold;
+		}
+		.img3{
+			position: relative;
+			top: 40px;
+		}
+		.section6{
+			width: 100%;
+			height: auto;
+			position: relative;
+			bottom: 100px;
+		}
+		.section-sub6{
+			width: 80%;
+			height: auto;
+		}
+		.text21{
+			text-align: center;
+			position: relative;
+			top: 80px;
+			left: 100px;
+			font-size: 36px;
+			font-family: 'Montserrat', sans-serif;
+			color: #444;
+		}
+		.lorem11{
+			text-align: center;
+			position: relative;
+			top: 100px;
+			left: 100px;
+			color: #999;
+			font-size: 16px;
+			font-family: 'Montserrat', sans-serif;
+			line-height: 26px;
+			font-weight: 500;
+		}
+		.text22{
+			width: 50%;
+			height: 60px;
+			background: #f5f5f5;
+			color: #888;
+			font-family: 'Montserrat', sans-serif;
+			font-size: 24px;
+			position: relative;
+			top: 160px;
+			left: 400px;
+			display: flex;
+			justify-content: left;
+			align-items: center;
+			padding-left: 50px;
+		}
+		.lorem12{
+			color: #888;
+			position: relative;
+			top: 180px;
+			left: 400px;
+			line-height: 24px;
+			font-family: 'Montserrat', sans-serif;
+		}
+		.text23{
+			width: 50%;
+			height: 60px;
+			background: #f5f5f5;
+			color: #888;
+			font-family: 'Montserrat', sans-serif;
+			font-size: 24px;
+			position: relative;
+			top: 210px;
+			left: 400px;
+			display: flex;
+			justify-content: left;
+			align-items: center;
+			padding-left: 50px;
+		}
+
+		.text24{
+			width: 50%;
+			height: 60px;
+			background: #f5f5f5;
+			color: #888;
+			font-family: 'Montserrat', sans-serif;
+			font-size: 24px;
+			position: relative;
+			top: 220px;
+			left: 400px;
+			display: flex;
+			justify-content: left;
+			align-items: center;
+			padding-left: 50px;
+		}
+
+		.text25{
+			width: 50%;
+			height: 60px;
+			background: #f5f5f5;
+			color: #888;
+			font-family: 'Montserrat', sans-serif;
+			font-size: 24px;
+			position: relative;
+			top: 230px;
+			left: 400px;
+			display: flex;
+			justify-content: left;
+			align-items: center;
+			padding-left: 50px;
+		}
+		.lorem13{
+			font-size: 13px;
+			color: #999;
+			position: relative;
+			top: 250px;
+			left: 470px;
+		}
+
+
+
+
+		
+	</style> 
+</head>
+<body>
+
+	<div class="header">
+		<h1 class="text3">megapack</h1>
+		<nav>
+			<ul>
+				<li><a href="#">FEATURES</a></li>
+				<li><a href="#">DROPDOWN</a></li>
+				<li><a href="#">CONTACT</a></li>
+			</ul>
+			<div class="icon">
+				<i class="fa fa-facebook fa15"></i>
+				<i class="fa fa-twitter fa15"></i>
+				<i class="fa fa-instagram fa15"></i>
+			</div>
+				
+		</nav>
+		<div class="header-sub">
+			<div class="header-left">
+				<h1 class="text">No Magic!</h1>
+				<h1 class="text1"><span id="span">it's</span> Bootstrap!</h1>
+				<button class="btn">PIXFORT PAGE BUILDER</button>
+				<p class="lorem">From logo design to website designers and<br> developers are ready to complete jobs<br> to save your money and time.</p>
+				<button class="btn1">Get Your Access</button>
+			</div>
+			<div class="header-right">
+				<img src="images/services-intro-image.png">
+			</div>
+		</div>
+		<div class="main">
+			<div class="child">
+				<i class="fa fa-desktop fa1 fa2"></i>
+				<h2 class="text4">Access to source code</h2>
+				<p class="lorem1">Create powerful bootstrap landing<br> pages with megapack.</p>
+			</div>
+			<div class="child">
+				<i class="fa fa-instagram fa1 fa3"></i>
+				<h2 class="text4">Bootstrap framework</h2>
+				<p class="lorem1">Create powerful bootstrap landing<br> pages with megapack.</p>
+			</div>
+			<div class="child">
+				<i class="fa fa-university fa1 fa4"></i>
+				<h2 class="text4">Sales charts</h2>
+				<p class="lorem1">Create powerful bootstrap landing<br> pages with megapack.</p>
+			</div>
+		</div>
+	</div>
+
+		<div class="section">
+				<div class="section-sub">
+					<h1 class="text5">Build your website in minutes!</h1>
+			<p class="lorem2">From logo design to website designers and developers are ready to<br> complete jobs to save your money and time.</p>
+			<div class="main1">
+				<div class="child1">
+					<h4 class="text6">Build Everything</h4>
+					<button class="btn2">PAGE BUILDER</button>
+					<p class="lorem3">Our experience with megapack<br> was just awesome! pixfort team <br>help us a lot and answered all<br> our questions.</p>
+				</div>
+				<div class="child2">
+					<h4 class="text6">Pure Bootstrap</h4>
+					<button class="btn2">PREMIUM QUALITY</button>
+					<p class="lorem3">Our experience with megapack<br> was just awesome! pixfort team <br>help us a lot and answered all<br> our questions.</p>
+				</div>
+				<div class="child3">
+					<h4 class="text6">Lifetime Upgrades</h4>
+					<button class="btn2">FREE UPDATES</button>
+					<p class="lorem3">Our experience with megapack<br> was just awesome! pixfort team <br>help us a lot and answered all<br> our questions.</p>
+				</div>
+			</div>
+		</div>
+		</div>
+
+		<div class="section2">
+			<div class="section-sub">
+				<h1 class="text7">Let the numbers talk!</h1>
+				<p class="lorem4">From logo design to website designers and developers are ready to complete jobs<br> to save your money and time.</p>
+				<div class="box">
+					<div class="box1">
+						<i class="fa fa-heart fa5"></i>
+						<h1 class="text8">+10,000</h1>
+						<h1 class="text9">HAPPY CUSTOMERS</h1>
+					</div>
+					<div class="box2">
+						<i class="fa fa-clone fa5"></i>
+						<h1 class="text8">+24,500</h1>
+						<h1 class="text9">DOWNLOADS SINCE 2012</h1>
+					</div>
+					<div class="box3">
+						<i class="fa fa-download fa5"></i>
+						<h1 class="text8">+32,000</h1>
+						<h1 class="text9">SUPPORT TICKETS SOLVED</h1>
+					</div>
+				</div>
+				<img src="images/services-image-hero.png" width="1000px" class="img">
+		</div>
+
+		<div class="section3">
+			<div class="section-sub3">
+				<h1 class="text10">Watch how we made it!</h1>
+				<p class="lorem5">From logo design to website designers and developers are ready to complete jobs to<br> save your money and time.</p>
+				<div class="section-left">
+						<i class="fa fa-clone fa6"></i>
+						<h3>SIMPLE & EASY</h3>
+						<button class="btn3">NO CODING REQUIRED</button>
+						<p class="lorem6">Our experience with megapack was just awesome! pixfort team help us a lot!</p>
+						<button class="btn4">PURCHASE</button>
+				</div>
+				<div class="section-right">
+					<img src="images/meg.jpg" width="530px">
+				</div>
+			</div>
+		</div>
+
+		<div class="section4">
+			<div class="section4-sub">
+				<h1 class="text11">Start with affordable prices.</h1>
+				<p class="lorem7">From logo design to website designers and developers are ready to complete jobs to save<br> your money and time.</p>
+			
+			<div class="main3">
+				<div class="child5">
+					<h1 class="text12">Personal</h1>
+					<h3 class="text13">FOR STARTERS</h3>
+					<button class="btn5">$9,99/mo</button>
+					<h3 class="text14">1 Landing Page</h3>
+					<h3 class="text15">5,000 Page views</h3>
+					<h3 class="text16">Free Domain</h3>
+					<h3 class="text17">-</h3>
+					<h3 class="text18">-</h3>
+					<button class="btn6">GET STARTED</button>
+				</div>
+				<div class="child6">
+					<h1 class="text12">Startup</h1>
+					<h3 class="text13 t13">MOST POPULAR</h3>
+					<button class="btn5">$29,99/mo</button>
+					<h3 class="text14">5 Landing Page</h3>
+					<h3 class="text15">5,000 Page views</h3>
+					<h3 class="text16">Free Domain</h3>
+					<h3 class="text17 t17">Basic Support</h3>
+					<h3 class="text18">-</h3>
+					<button class="btn6 btn7">GET STARTED</button>
+				</div>
+				<div class="child7">
+					<h1 class="text12">Business</h1>
+					<h3 class="text13">FOR COMPANIES</h3>
+					<button class="btn5">$59,99/mo</button>
+					<h3 class="text14">100 Landing Pages</h3>
+					<h3 class="text15">200,000 Page views</h3>
+					<h3 class="text16">Free Domain</h3>
+					<h3 class="text17 t1">Premium Support</h3>
+					<h3 class="text18 t18">Free Updates</h3>
+					<button class="btn6">GET STARTED</button>
+				</div>
+			</div>
+			<p class="lorem8">Can't find the right service? No problem, just send a message to our friendly team!</p>
+			<button class="btn8">send us a message</button>
+			</div>
+		</div>
+
+		<div class="section5">
+			<div class="section-sub5">
+				<h1 class="text19">You are in good company.</h1>
+				<p class="lorem9">Lorem ipsum dolor sit amet consectet adipiscing elit sed do eiusmoda tempo incididunt ut<br> labore ad voluptate velit tolar merade esse.</p>
+
+				<div class="main4">
+					<div class="child11">
+						<img src="images/airbnb-logo (1).png">
+						<p class="lorem10">Works good and so everyone can create a nice looking landingpage without coding. Thanks a lot!</p>
+						<h4 class="text20">Via airbnb.com</h4>
+						<img src="images/stars (1).png" class="img3">
+					</div>
+					<div class="child12">
+						<img src="images/apple-logo (1).png">
+						<p class="lorem10">Works good and so everyone can create a nice looking landingpage without coding. Thanks a lot!</p>
+						<h4 class="text20">Via airbnb.com</h4>
+						<img src="images/stars (1).png" class="img3">
+					</div>
+					<div class="child13">
+						<img src="images/Disney-logo (1).png">
+						<p class="lorem10">Works good and so everyone can create a nice looking landingpage without coding. Thanks a lot!</p>
+						<h4 class="text20">Via airbnb.com</h4>
+						<img src="images/stars (1).png" class="img3">
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="section6">
+			<div class="section-sub6">
+				<h1 class="text21">Frequently asked questions</h1>	
+				<p class="lorem11">PixFort Builder comes packed with MEGAPACK, the biggest template we have ever made, in<br> addition to a powerful integration system with a set of the most popular email services that<br> you already use and love.</p>
+				<h1 class="text22">Learn how to use the builder</h1>
+				<p class="lorem12">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor<br> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud<br> exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+				<h1 class="text23">Create awesome accordions</h1>
+				<h1 class="text24">Based on Bootstrap framework</h1>
+				<h1 class="text25">Do I get unlimited free updates</h1>
+				<p class="lorem13">*The new PixFort Page Builder represents the next generation of HTML website creation tools. It<br> introduces a revolutionary new way to build your website without writing a single line of code.</p>
+			</div>
+		</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>megapack</title>
+	<link rel="shortcut icon" href="https://builder.pixfort.com/core/images/favicon.png">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+		.header{
+			width: 100%;
+			height: auto;
+			background: black;
+		}
+		.header-sub{
+			width: 80%;
+			height: auto;
+			margin: 0px auto;
+			padding: 100px 0px;
+			display: flex;
+			justify-content: space-evenly;
+		}
+		.text{
+			color: white;
+			font-size: 40px;
+			font-family: arial;
+			margin: 10px 0px;
+			
+
+		}
+		.text1{
+			color: white;
+			font-size: 40px;
+			font-family: arial;
+			margin: 10px 0;
+			
+		}
+		.btn{
+			background: #444;
+			color: white;
+			padding: 8px;
+			font-family: arial;
+			font-weight: bold;
+			border: none;
+			border-radius: 10px;
+			margin-top: 14px;
+
+		}
+		.lorem{
+			text-align: justify;
+			color: white;
+			margin-top: 17px;
+			font-family: arial;
+			line-height: 22px;
+			
+		}
+		.btn1{
+			background: #f7941d;
+			color: white;
+			font-size: 14px;
+			font-weight: bold;
+			text-transform: uppercase;
+			padding: 14px 20px;
+			border-radius: 30px;
+			border: none;
+			letter-spacing: 2px;
+			cursor: pointer;
+			margin-top: 24px;
+		}
+		.header-left{
+			margin-top: 160px;
+		}
+		.text3{
+			color: white;
+			text-transform: uppercase;
+			margin-left: 270px;
+			position: relative;
+			top: 45px;
+		}
+		nav{
+			width: 80%;
+			display: flex;
+			justify-content: flex-end;
+			position: relative;
+			top: 8px;
+
+		}
+		nav ul{
+			display: flex;
+			list-style: none;
+		}
+		nav ul li{
+			padding: 10px;
+			color: white;
+			font-size: 18px;
+			font-family: arial;
+		}
+		nav ul li a{
+			text-decoration: none;
+			font-weight: bolder;
+			color: white;
+		}
+		nav ul li a:hover{
+			color: gray;
+		}
+		#span{
+			font-weight: lighter;
+		}
+		.fa15{
+			color: white;
+			font-size: 20px;
+			margin: 10px;
+			cursor: pointer;
+		}
+		.fa15:hover{
+			color: gray;
+		}
+		.main{
+			width: 80%;
+			height: auto;
+			margin: 0px auto;
+			padding: 100px 0px;
+			display: flex;
+			justify-content: space-evenly;
+			line-height: 25px;
+			/right: 100px;/
+		}
+		.child{
+			color: white;
+			position: relative;
+		}
+		.text4{
+			font-size: 24px;
+			font-family: arial;
+		}
+		.lorem1{
+			text-align: justify;
+			font-family: arial;
+		}
+		
+		.fa1{
+			position: absolute;
+			left: -80px;
+			font-size: 50px;
+		}
+		.fa2{
+			color: blue;
+		}
+		.fa3{
+			color: hotpink;
+		}
+		.fa4{
+			color: orange;
+		}
+		.section{
+			width: 100%;
+			height: auto;
+			background: #f4f4f4;
+		}
+		.section-sub{
+			widows: 80%;
+			height: auto;
+
+		}
+		.text5{
+			padding: 100px 0px;
+			margin: 0px auto;
+			margin-left: 270px;
+		}
+		.lorem2{
+			margin-left: 270px;
+			position: relative;
+			bottom: 80px;
+			font-family: arial;
+			line-height: 20px;
+		}
+		.main1{
+			width: 80%;
+			height: auto;
+			margin: 0px auto;
+			padding: 100px 0px;
+			display: flex;
+			justify-content: center;
+			grid-gap: 20px;
+			margin-right: 180px;
+
+		}
+		.child1{
+			width: 300px;
+			height: 250px;
+			background: white;
+			border-top: thick solid #1274e7;
+			border-width: 3px;
+			padding: 19px;
+
+		}
+		.child2{
+			width: 300px;
+			height: 250px;
+			background: white;
+			border-top: thick solid #00ffa8;
+			border-width: 3px;
+			padding: 19px;
+
+		}
+		.child3{
+			width: 300px;
+			height: 250px;
+			background: white;
+			border-top: thick solid #ff9800;
+			border-width: 3px;
+			padding: 19px;
+
+		}
+		.text6{
+			font-family: arial;
+			font-size: 24px;
+			font-weight: lighter;
+			position: relative;
+			top: 25px;
+			left: 30px;
+		}
+		.btn2{
+			background:  lightgray;
+			position: relative;
+			top: 35px;
+			left: 30px;
+			font-family: arial;
+		}
+		.lorem3{
+			text-align: justify;
+			position: relative;
+			top: 50px;
+			left: 30px;
+			font-family: arial;
+		}
+		.section2{
+			width: 100%;
+			height: auto;
+		}
+		.section-sub2{
+			width: 80%;
+			height: auto;
+		}
+		.text7{
+			padding: 100px 0px;
+			margin-left: 270px;
+			font-family: arial;
+		}
+		.lorem4{
+			margin-left: 270px;
+			position: relative;
+			bottom: 90px;
+			font-family: arial;
+		}
+		.box{
+			width: 80%;
+			height: auto;
+			margin: 0px auto;
+			padding: 100px 0px;
+			display: flex;
+			justify-content: space-evenly;
+			position: relative;
+			bottom: 100px;
+		}
+		.box1{
+			width: 250px;
+			height: 250px;
+			/background: lightgray;/
+		}
+		.box2{
+			width: 250px;
+			height: 250px;
+			/background: lightgray;/
+		}
+		.box3{
+			width: 250px;
+			height: 250px;
+			/background: lightgray;/
+		}
+		.fa5{
+			font-size: 40px;
+			color: #888;
+			background: white;
+		}
+		.text8{
+			color: #999;
+			margin-top: 20px;
+		}
+		.text9{
+			font-size: 15px;
+			font-family: arial;
+			font-weight: lighter;
+			background: #f4f4f4;
+			color: #888;
+			padding: 8px;
+			margin-top: 20px;	
+		}
+		.img{
+			position: relative;
+			left: 250px;
+			bottom: 100px;
+		}
+		.section3{
+			width: 100%;
+			height: auto;
+			background:  #f4f4f4;
+
+		}
+		.section-sub3{
+			width: 80%;
+			height: auto;
+		}
+		.text10{
+			padding: 100px 0px;
+			margin-left: 270px;
+			font-family: arial;
+		}
+		.lorem5{
+			margin-left: 270px;
+			position: relative;
+			bottom: 90px;
+			font-family: arial;
+		}
+		.section-left{
+			width: 250px;
+			height: 300px;
+			background: white;
+			margin-left: 270px;
+			border-top: thick solid orange;
+			border-width: 3px; 
+
+		}
+		.fa6{
+			font-size: 50px;
+			color: #888;
+			position: relative;
+			left: 20px;
+			top: 30px;
+		}
+
+		h3{
+			font-size: 20px;
+			font-family: 'Montserrat', sans-serif;
+			letter-spacing: 1px;
+			position: relative;
+			left: 20px;
+			top: 50px;
+		}
+		.btn3{
+			background: #f4f4f4;
+			color: #888;
+			padding: 3px;
+			font-family: arial;
+			border: none;
+			position: relative;
+			left: 20px;
+			top: 60px;
+		}
+		.lorem6{
+			position: relative;
+			left: 20px;
+			top: 70px;
+			font-family: arial;
+		}
+		.btn4{
+			width: 150px;
+			background: #f7941d;
+			color: white;
+			padding: 8px;
+			font-family: arial;
+			font-weight: bold;
+			padding: 10px;
+			border:none; ;
+			border-radius: 30px;
+			letter-spacing: 2px;
+			position: relative;
+			left: 20px;
+			top: 90px;
+		}
+		.section-right{
+			position: relative;
+			left: 550px;
+			top: -300px;
+		}
+		.section4{
+			width: 100%;
+			height: auto;
+			background:  black;
+			position: relative;
+			bottom: 100px;
+
+		}
+		.section-sub4{
+			width: 80%;
+			height: auto;
+		}
+		.text11{
+			padding: 100px 0px;
+			margin-left: 270px;
+			font-family: arial;
+			color: white;
+		}
+		.lorem7{
+			margin-left: 270px;
+			font-family: arial;
+			color: white;
+			position: relative;
+			bottom: 90px;
+			font-family: arial;
+		}
+		.main3{
+			width: 80%;
+			height: auto;
+			margin: 0px auto;
+			padding: 100px 0px;
+			display: flex;
+			justify-content: space-evenly;
+			position: relative;
+			bottom: 100px;
+		}
+		.child5{
+			width: 270px;
+			height: 550px;
+			background: #444;
+			border-top: thick solid #777;
+			border-width: 3px;
+		}
+		.child6{
+			width: 270px;
+			height: 550px;
+			background: #444;
+			border-top: thick solid orange;
+			border-width: 3px;
+		}
+		.child7{
+			width: 270px;
+			height: 550px;
+			background: #444;
+			border-top: thick solid #777;
+			border-width: 3px;
+		}
+		.text12{
+			color: white;
+			text-align: center;
+			position: relative;
+			top: 20px;
+		}
+		.text13{
+			color: #888;
+			position: relative;
+			left: 50px;
+		}
+		.t13{
+			color: orange;
+		}
+		.btn5{
+			background: #666;
+			color: #aaa;
+			font-family: arial;
+			font-weight: bold;
+			padding: 10px;
+			border:none;
+			border-radius: 30px;
+			letter-spacing: 2px;
+			position: relative;
+			left: 80px;
+			top: 80px;
+		}
+		.text14{
+			color: #888;
+			position: relative;
+			left: 50px;
+			top: 110px;
+		}
+		.text15{
+			color: #888;
+			position: relative;
+			left: 50px;
+			top: 140px;
+		}
+		.text16{
+			color: #888;
+			position: relative;
+			left: 70px;
+		    top: 165px;
+		}
+		.text17{
+			color: #888;
+			position: relative;
+			left: 130px;
+			top: 190px;
+		}
+
+		.t17{
+			left: 70px;
+		}
+
+		.t1{
+			left: 50px;
+		}
+
+		.text18{
+			color: #888;
+			position: relative;
+			left: 130px;
+			top: 220px;
+		}
+		.t18{
+			position: relative;
+			left: 70px;
+		}
+		.btn6{
+			width: 120px;
+			background: #666;
+			color: white;
+			position: relative;
+			left: 80px;
+			top: 250px;
+			font-family: arial;
+			border: none;
+			border-radius: 24px;
+			padding: 10px;
+		}
+		.btn7{
+			background: orange;
+		}
+		.lorem8{
+			margin-left: 270px;
+			color: white;
+			font-size: 18px;
+			position: relative;
+			bottom: 100px;
+		}
+		.btn8{
+			text-transform: uppercase;
+			font-family: arial;
+			font-size: 16px;
+			width: 190px;
+			background: #666;
+			color:  #888;
+			padding: 10px; 
+			border: none;
+			border-radius: 24px;
+			position: absolute;
+			left: 60%;
+			top: 88%;
+		}
+		.section5{
+			width: 100%;
+			height: auto;
+			background: #1274e7;
+			position: relative;
+			bottom: 100px;
+		}
+		.section-sub5{
+			width: 80%;
+			height: auto;
+		}
+		.text19{
+			font-family: arial;
+			margin-left: 270px;
+			padding: 100px 0px;
+			font-weight: lighter;
+			color: white;
+
+		}
+		.lorem9{
+			font-family: arial;
+			margin-left: 270px;
+			color: white;
+			position: relative;
+			bottom: 90px;
+			line-height: 24px;
+
+		}
+		.main4{
+			width: 80%;
+			height: auto;
+			margin: 0px auto;
+			padding: 100px 0px;
+			display: flex;
+			justify-content: space-between;
+			position: relative;
+			left: 140px;
+		}
+		.child11{
+			width: 250px;
+			height: 350px;
+			background: #1274e7;
+			text-align: center;
+			color: white;
+			font-size: 15px;
+			font-family: arial;
+			line-height: 24px;
+		}
+		.child12{
+			width: 250px;
+			height: 350px;
+			background: #5976eb;
+			text-align: center;
+			color: white;
+			font-size: 15px;
+			font-family: arial;
+			line-height: 24px;
+		}
+		.child13{
+			width: 250px;
+			height: 350px;
+			background: #1274e7;
+			text-align: center;
+			color: white;
+			font-size: 15px;
+			font-family: arial;
+			line-height: 24px;
+		}
+		.text20{
+			text-align: center;
+			font-size: 20px;
+			font-family: arial;
+			position: relative;
+			top: 24px;
+			font-weight: bold;
+		}
+		.img3{
+			position: relative;
+			top: 40px;
+		}
+		.section6{
+			width: 100%;
+			height: auto;
+			position: relative;
+			bottom: 100px;
+		}
+		.section-sub6{
+			width: 80%;
+			height: auto;
+		}
+		.text21{
+			text-align: center;
+			position: relative;
+			top: 80px;
+			left: 100px;
+			font-size: 36px;
+			font-family: 'Montserrat', sans-serif;
+			color: #444;
+		}
+		.lorem11{
+			text-align: center;
+			position: relative;
+			top: 100px;
+			left: 100px;
+			color: #999;
+			font-size: 16px;
+			font-family: 'Montserrat', sans-serif;
+			line-height: 26px;
+			font-weight: 500;
+		}
+		.text22{
+			width: 50%;
+			height: 60px;
+			background: #f5f5f5;
+			color: #888;
+			font-family: 'Montserrat', sans-serif;
+			font-size: 24px;
+			position: relative;
+			top: 160px;
+			left: 400px;
+			display: flex;
+			justify-content: left;
+			align-items: center;
+			padding-left: 50px;
+		}
+		.lorem12{
+			color: #888;
+			position: relative;
+			top: 180px;
+			left: 400px;
+			line-height: 24px;
+			font-family: 'Montserrat', sans-serif;
+		}
+		.text23{
+			width: 50%;
+			height: 60px;
+			background: #f5f5f5;
+			color: #888;
+			font-family: 'Montserrat', sans-serif;
+			font-size: 24px;
+			position: relative;
+			top: 210px;
+			left: 400px;
+			display: flex;
+			justify-content: left;
+			align-items: center;
+			padding-left: 50px;
+		}
+
+		.text24{
+			width: 50%;
+			height: 60px;
+			background: #f5f5f5;
+			color: #888;
+			font-family: 'Montserrat', sans-serif;
+			font-size: 24px;
+			position: relative;
+			top: 220px;
+			left: 400px;
+			display: flex;
+			justify-content: left;
+			align-items: center;
+			padding-left: 50px;
+		}
+
+		.text25{
+			width: 50%;
+			height: 60px;
+			background: #f5f5f5;
+			color: #888;
+			font-family: 'Montserrat', sans-serif;
+			font-size: 24px;
+			position: relative;
+			top: 230px;
+			left: 400px;
+			display: flex;
+			justify-content: left;
+			align-items: center;
+			padding-left: 50px;
+		}
+		.lorem13{
+			font-size: 13px;
+			color: #999;
+			position: relative;
+			top: 250px;
+			left: 470px;
+		}
+
+
+
+
+		
+	</style> 
+</head>
+<body>
+
+	<div class="header">
+		<h1 class="text3">megapack</h1>
+		<nav>
+			<ul>
+				<li><a href="#">FEATURES</a></li>
+				<li><a href="#">DROPDOWN</a></li>
+				<li><a href="#">CONTACT</a></li>
+			</ul>
+			<div class="icon">
+				<i class="fa fa-facebook fa15"></i>
+				<i class="fa fa-twitter fa15"></i>
+				<i class="fa fa-instagram fa15"></i>
+			</div>
+				
+		</nav>
+		<div class="header-sub">
+			<div class="header-left">
+				<h1 class="text">No Magic!</h1>
+				<h1 class="text1"><span id="span">it's</span> Bootstrap!</h1>
+				<button class="btn">PIXFORT PAGE BUILDER</button>
+				<p class="lorem">From logo design to website designers and<br> developers are ready to complete jobs<br> to save your money and time.</p>
+				<button class="btn1">Get Your Access</button>
+			</div>
+			<div class="header-right">
+				<img src="images/services-intro-image.png">
+			</div>
+		</div>
+		<div class="main">
+			<div class="child">
+				<i class="fa fa-desktop fa1 fa2"></i>
+				<h2 class="text4">Access to source code</h2>
+				<p class="lorem1">Create powerful bootstrap landing<br> pages with megapack.</p>
+			</div>
+			<div class="child">
+				<i class="fa fa-instagram fa1 fa3"></i>
+				<h2 class="text4">Bootstrap framework</h2>
+				<p class="lorem1">Create powerful bootstrap landing<br> pages with megapack.</p>
+			</div>
+			<div class="child">
+				<i class="fa fa-university fa1 fa4"></i>
+				<h2 class="text4">Sales charts</h2>
+				<p class="lorem1">Create powerful bootstrap landing<br> pages with megapack.</p>
+			</div>
+		</div>
+	</div>
+
+		<div class="section">
+				<div class="section-sub">
+					<h1 class="text5">Build your website in minutes!</h1>
+			<p class="lorem2">From logo design to website designers and developers are ready to<br> complete jobs to save your money and time.</p>
+			<div class="main1">
+				<div class="child1">
+					<h4 class="text6">Build Everything</h4>
+					<button class="btn2">PAGE BUILDER</button>
+					<p class="lorem3">Our experience with megapack<br> was just awesome! pixfort team <br>help us a lot and answered all<br> our questions.</p>
+				</div>
+				<div class="child2">
+					<h4 class="text6">Pure Bootstrap</h4>
+					<button class="btn2">PREMIUM QUALITY</button>
+					<p class="lorem3">Our experience with megapack<br> was just awesome! pixfort team <br>help us a lot and answered all<br> our questions.</p>
+				</div>
+				<div class="child3">
+					<h4 class="text6">Lifetime Upgrades</h4>
+					<button class="btn2">FREE UPDATES</button>
+					<p class="lorem3">Our experience with megapack<br> was just awesome! pixfort team <br>help us a lot and answered all<br> our questions.</p>
+				</div>
+			</div>
+		</div>
+		</div>
+
+		<div class="section2">
+			<div class="section-sub">
+				<h1 class="text7">Let the numbers talk!</h1>
+				<p class="lorem4">From logo design to website designers and developers are ready to complete jobs<br> to save your money and time.</p>
+				<div class="box">
+					<div class="box1">
+						<i class="fa fa-heart fa5"></i>
+						<h1 class="text8">+10,000</h1>
+						<h1 class="text9">HAPPY CUSTOMERS</h1>
+					</div>
+					<div class="box2">
+						<i class="fa fa-clone fa5"></i>
+						<h1 class="text8">+24,500</h1>
+						<h1 class="text9">DOWNLOADS SINCE 2012</h1>
+					</div>
+					<div class="box3">
+						<i class="fa fa-download fa5"></i>
+						<h1 class="text8">+32,000</h1>
+						<h1 class="text9">SUPPORT TICKETS SOLVED</h1>
+					</div>
+				</div>
+				<img src="images/services-image-hero.png" width="1000px" class="img">
+		</div>
+
+		<div class="section3">
+			<div class="section-sub3">
+				<h1 class="text10">Watch how we made it!</h1>
+				<p class="lorem5">From logo design to website designers and developers are ready to complete jobs to<br> save your money and time.</p>
+				<div class="section-left">
+						<i class="fa fa-clone fa6"></i>
+						<h3>SIMPLE & EASY</h3>
+						<button class="btn3">NO CODING REQUIRED</button>
+						<p class="lorem6">Our experience with megapack was just awesome! pixfort team help us a lot!</p>
+						<button class="btn4">PURCHASE</button>
+				</div>
+				<div class="section-right">
+					<img src="images/meg.jpg" width="530px">
+				</div>
+			</div>
+		</div>
+
+		<div class="section4">
+			<div class="section4-sub">
+				<h1 class="text11">Start with affordable prices.</h1>
+				<p class="lorem7">From logo design to website designers and developers are ready to complete jobs to save<br> your money and time.</p>
+			
+			<div class="main3">
+				<div class="child5">
+					<h1 class="text12">Personal</h1>
+					<h3 class="text13">FOR STARTERS</h3>
+					<button class="btn5">$9,99/mo</button>
+					<h3 class="text14">1 Landing Page</h3>
+					<h3 class="text15">5,000 Page views</h3>
+					<h3 class="text16">Free Domain</h3>
+					<h3 class="text17">-</h3>
+					<h3 class="text18">-</h3>
+					<button class="btn6">GET STARTED</button>
+				</div>
+				<div class="child6">
+					<h1 class="text12">Startup</h1>
+					<h3 class="text13 t13">MOST POPULAR</h3>
+					<button class="btn5">$29,99/mo</button>
+					<h3 class="text14">5 Landing Page</h3>
+					<h3 class="text15">5,000 Page views</h3>
+					<h3 class="text16">Free Domain</h3>
+					<h3 class="text17 t17">Basic Support</h3>
+					<h3 class="text18">-</h3>
+					<button class="btn6 btn7">GET STARTED</button>
+				</div>
+				<div class="child7">
+					<h1 class="text12">Business</h1>
+					<h3 class="text13">FOR COMPANIES</h3>
+					<button class="btn5">$59,99/mo</button>
+					<h3 class="text14">100 Landing Pages</h3>
+					<h3 class="text15">200,000 Page views</h3>
+					<h3 class="text16">Free Domain</h3>
+					<h3 class="text17 t1">Premium Support</h3>
+					<h3 class="text18 t18">Free Updates</h3>
+					<button class="btn6">GET STARTED</button>
+				</div>
+			</div>
+			<p class="lorem8">Can't find the right service? No problem, just send a message to our friendly team!</p>
+			<button class="btn8">send us a message</button>
+			</div>
+		</div>
+
+		<div class="section5">
+			<div class="section-sub5">
+				<h1 class="text19">You are in good company.</h1>
+				<p class="lorem9">Lorem ipsum dolor sit amet consectet adipiscing elit sed do eiusmoda tempo incididunt ut<br> labore ad voluptate velit tolar merade esse.</p>
+
+				<div class="main4">
+					<div class="child11">
+						<img src="images/airbnb-logo (1).png">
+						<p class="lorem10">Works good and so everyone can create a nice looking landingpage without coding. Thanks a lot!</p>
+						<h4 class="text20">Via airbnb.com</h4>
+						<img src="images/stars (1).png" class="img3">
+					</div>
+					<div class="child12">
+						<img src="images/apple-logo (1).png">
+						<p class="lorem10">Works good and so everyone can create a nice looking landingpage without coding. Thanks a lot!</p>
+						<h4 class="text20">Via airbnb.com</h4>
+						<img src="images/stars (1).png" class="img3">
+					</div>
+					<div class="child13">
+						<img src="images/Disney-logo (1).png">
+						<p class="lorem10">Works good and so everyone can create a nice looking landingpage without coding. Thanks a lot!</p>
+						<h4 class="text20">Via airbnb.com</h4>
+						<img src="images/stars (1).png" class="img3">
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="section6">
+			<div class="section-sub6">
+				<h1 class="text21">Frequently asked questions</h1>	
+				<p class="lorem11">PixFort Builder comes packed with MEGAPACK, the biggest template we have ever made, in<br> addition to a powerful integration system with a set of the most popular email services that<br> you already use and love.</p>
+				<h1 class="text22">Learn how to use the builder</h1>
+				<p class="lorem12">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor<br> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud<br> exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+				<h1 class="text23">Create awesome accordions</h1>
+				<h1 class="text24">Based on Bootstrap framework</h1>
+				<h1 class="text25">Do I get unlimited free updates</h1>
+				<p class="lorem13">*The new PixFort Page Builder represents the next generation of HTML website creation tools. It<br> introduces a revolutionary new way to build your website without writing a single line of code.</p>
+			</div>
+		</div>
+
+</body>
+</html>

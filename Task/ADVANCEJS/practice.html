@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hybrid practice</title>
+</head>
+<body>
+
+
+    <script>
+        class A{
+            x(){
+                console.log("Class A")
+            }
+        }
+        class B extends A{
+            y(){
+                console.log("Class B")
+            }
+        }
+        class C extends B{
+            z(){
+                console.log("Class C")
+            }
+        }
+        class D extends A{
+            o(){
+                console.log("Class D")
+            }
+        }
+
+        let data = new C
+        console.log(data)
+
+        let data1 = new D
+        console.log(data1)
+    </script>
+    
+</body>
+</html>
