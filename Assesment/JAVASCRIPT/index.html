@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task Manager</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0; padding: 0;
+      display: flex; justify-content: center;
+      background: #f5f5f5;
+    }
+    .container {
+      width: 90%; max-width: 600px;
+      margin: 20px; padding: 20px;
+      background: white; border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    form {
+      display: grid;
+      gap: 10px;
+    }
+    input, textarea, select, button {
+      padding: 10px; border: 1px solid #ccc; border-radius: 5px;
+      width: 100%;
+    }
+    button {
+      background: #007bff; color: white; cursor: pointer;
+    }
+    button:hover { background: #0056b3; }
+    .task-list { margin-top: 20px; }
+    .task {
+      background: #fafafa; border: 1px solid #ddd;
+      padding: 10px; border-radius: 5px;
+      margin-bottom: 10px;
+      display: flex; justify-content: space-between; align-items: center;
+      flex-wrap: wrap;
+    }
+    .actions button {
+      margin-left: 5px;
+      background: #dc3545;
+    }
+    .actions button:first-child { background: #28a745; }
+    @media (max-width: 600px) {
+      .task { flex-direction: column; align-items: flex-start; }
+      .actions { margin-top: 5px; }
+    }
+    .message {
+      padding: 8px; margin-top: 10px;
+      border-radius: 5px; font-size: 14px;
+    }
+    .success { background: #d4edda; color: #155724; }
+    .error { background: #f8d7da; color: #721c24; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Task Manager</h2>
+    <form id="taskForm">
+      <input type="text" id="title" placeholder="Task Title (min 10 chars)" required>
+      <textarea id="description" placeholder="Description" required></textarea>
+      <input type="date" id="dueDate" required>
+      <select id="priority" required>
+        <option value="">Select Priority</option>
+        <option>High</option><option>Medium</option><option>Low</option>
+      </select>
+      <select id="status" required>
+        <option value="">Select Status</option>
+        <option>To Do</option><option>In Progress</option><option>Done</option>
+      </select>
+      <button type="submit">Add Task</button>
+    </form>
+    <div id="messageBox"></div>
+    <div class="task-list" id="taskList"></div>
+  </div>
+
+  <script>
+    class CustomerFormHandler {
+      constructor() {
+        this.form = document.getElementById("taskForm");
+        this.taskList = document.getElementById("taskList");
+        this.messageBox = document.getElementById("messageBox");
+
+        this.tasks = JSON.parse(localStorage.getItem("tasks")) || [];
+
+        this.form.addEventListener("submit", (e) => this.handleSubmit(e));
+        this.taskList.addEventListener("click", (e) => this.handleActions(e));
+
+        this.renderTasks();
+      }
+
+      validateForm(title, description, dueDate, priority, status) {
+        if (title.length < 10) {
+          this.showMessage("Task title must be at least 10 characters.", "error");
+          return false;
+        }
+        if (!description || !dueDate || !priority || !status) {
+          this.showMessage("All fields are required.", "error");
+          return false;
+        }
+        return true;
+      }
+
+      saveToLocalStorage() {
+        localStorage.setItem("tasks", JSON.stringify(this.tasks));
+      }
+
+      clearForm() {
+        this.form.reset();
+      }
+
+      showMessage(msg, type) {
+        this.messageBox.textContent = msg;
+        this.messageBox.className = `message ${type}`;
+        setTimeout(() => this.messageBox.textContent = "", 3000);
+      }
+
+      handleSubmit(e) {
+        e.preventDefault();
+        const title = document.getElementById("title").value.trim();
+        const description = document.getElementById("description").value.trim();
+        const dueDate = document.getElementById("dueDate").value;
+        const priority = document.getElementById("priority").value;
+        const status = document.getElementById("status").value;
+
+        if (!this.validateForm(title, description, dueDate, priority, status)) return;
+
+        const task = { id: Date.now(), title, description, dueDate, priority, status };
+        this.tasks.push(task);
+        this.saveToLocalStorage();
+        this.renderTasks();
+        this.clearForm();
+        this.showMessage("Task added successfully!", "success");
+      }
+
+      renderTasks() {
+        this.taskList.innerHTML = this.tasks.map(task => `
+          <div class="task" data-id="${task.id}">
+            <div>
+              <strong>${task.title}</strong><br>
+              ${task.description}<br>
+              <small>${task.dueDate} | ${task.priority} | ${task.status}</small>
+            </div>
+            <div class="actions">
+              <button data-action="edit">Edit</button>
+              <button data-action="delete">Delete</button>
+            </div>
+          </div>
+        `).join("");
+      }
+
+      handleActions(e) {
+        if (e.target.tagName !== "BUTTON") return;
+        const action = e.target.dataset.action;
+        const id = e.target.closest(".task").dataset.id;
+
+        if (action === "delete") {
+          this.tasks = this.tasks.filter(t => t.id != id);
+          this.saveToLocalStorage();
+          this.renderTasks();
+          this.showMessage("Task deleted.", "success");
+        } else if (action === "edit") {
+          const task = this.tasks.find(t => t.id == id);
+          document.getElementById("title").value = task.title;
+          document.getElementById("description").value = task.description;
+          document.getElementById("dueDate").value = task.dueDate;
+          document.getElementById("priority").value = task.priority;
+          document.getElementById("status").value = task.status;
+          this.tasks = this.tasks.filter(t => t.id != id);
+          this.saveToLocalStorage();
+          this.renderTasks();
+          this.showMessage("Editing mode: Update and resubmit.", "success");
+        }
+      }
+    }
+
+    new CustomerFormHandler();
+    
+  </script>
+</body>
+</html>
