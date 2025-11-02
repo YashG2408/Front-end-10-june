@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+
+        let j=json = `[
+            {
+                "id": 1,
+                "name": "Yash",
+                "sname": "Gondaliya",
+                "course": "Front-end",
+                "email": "gondaliyay028@gmail.com"
+            },
+            {
+                "id": 2,
+                "name": "Harsh",
+                "sname": "Gohil",
+                "course": "back-end",
+                "email": "harsh12@gmail.com"
+            },
+            {
+                "id": 3,
+                "name": "Nirav",
+                "sname": "Gujariya",
+                "course": "Graphic-design",
+                "email": "niravg18@gmail.com"
+            },
+            {
+                "id": 4,
+                "name": "Jay",
+                "sname": "Vaghela",
+                "course": "UI-UX",
+                "email": "jaylalit2@gmail.com"
+            },
+            {
+                "id": 5,
+                "name": "Swet",
+                "sname": "Patel",
+                "course": "Animation",
+                "email": "swetpatel9@gmail.com"
+            },
+            {
+                "id": 6,
+                "name": "Aayush",
+                "sname": "Purohit",
+                "course": "Cyber Security",
+                "email": "aayush15@gmail.com"
+            },
+            {
+                "id": 7,
+                "name": "Neer",
+                "sname": "Patel",
+                "course": "Java Developer",
+                "email": "neer34@gmail.com"
+            },
+            {
+                "id": 8,
+                "name": "Charmi",
+                "sname": "Patel",
+                "course": "Python Developer",
+                "email": "charmi24@gmail.com"
+            },
+            {
+                "id": 9,
+                "name": "Monika",
+                "sname": "Patel",
+                "course": "React Js ",
+                "email": "monika002@gmail.com"
+            },
+            {
+                "id": 10,
+                "name": "Khushi",
+                "sname": "Panchal",
+                "course": "Softskills",
+                "email": "khushi18@gmail.com"
+            },
+        ]`
+
+        let objdata = JSON.parse(json)
+        for (let user of objdata) {
+            console.log(user)
+            document.write("id :", user.id, "name :", user.name, "sname :", user.sname, "course :", user.course, "email :", user.email)
+        }
+
+    </script>
+
+</body>
+
+</html>
