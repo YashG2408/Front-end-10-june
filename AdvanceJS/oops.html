@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Oops</title>
+</head>
+<body>
+
+    <script>
+
+      var bankBalance = 4000;
+      
+
+        class Bank{
+          x = function Details(pin){
+            let bankName = "Axis"
+            let bankIFSC = "Axis0123"
+            let pinNumber = pin
+
+            console.log("Bank Name :",bankName)
+            console.log("bank IFSC :",bankIFSC)
+            console.log("Bank Pin :",pinNumber)
+            // console.log("Bank balance :",bankBalance)
+          }  
+
+          y = function Deposits(addmoney){
+            let total = bankBalance += addmoney;
+            console.log("Total  =>", total)
+          }
+          
+          withdraw(addmoney){
+            if(addmoney<=0){
+              console.log("amount is Unvalid")
+            }
+            else if(addmoney > bankBalance){
+              console.log("infuciation balance")
+            }
+            else{
+              bankBalance -= addmoney
+                console.log("withdraw successfull :", bankBalance);
+            }
+          }
+          checkbalance(){
+            console.log("current bankbalance :", bankBalance);
+          }
+        }
+        // console.log(Bank)
+
+        const yash = new Bank;
+        console.log(yash);
+        yash.x(123);
+        yash.y(2000,4000);
+        yash.withdraw(2000);
+        yash.checkbalance();
+      
+      
+    </script>
+    
+</body>
+</html>

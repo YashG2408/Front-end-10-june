@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>encu & absrc</title>
+</head>
+<body>
+
+    <script>
+
+        function member(name,age){
+            let _name = name;
+            let _age = age;
+
+            this.getName=()=>{
+                return _name;
+            }
+            this.getAge=()=>{
+               return _age; 
+            }
+            this.setAge=(newAge)=>{
+                return _age = newAge;
+            }
+        }
+
+        const user = new member("Yash",21);
+        console.log(user)
+        console.log(user._age);
+        console.log(user._name)
+
+        console.log(user.getAge());
+        console.log(user.getName())
+        user.setAge(23);
+
+        console.log(user.getAge())
+
+
+    </script>
+    
+</body>
+</html>

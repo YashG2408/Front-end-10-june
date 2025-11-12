@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- call : two object combine seprate argument  -->
+
+
+    <script>
+
+        let data = {
+            fullname : function display(city,state){
+                console.log("Fname =>",this.fname, "lname =>", this.lname,"city =>",city, "state =>",state)
+            }
+        }
+        let person ={
+            fname : "Yash",
+            lname : "Gondaliya"
+        }
+        let person1 = {
+            fname : "Nirav",
+            lname :"Gujariya"
+        }
+
+        data.fullname.call(person,"Ahemedabad","Gujrat");
+        data.fullname.apply(person,["Amreli","Gujrat"])
+
+    </script>
+    
+</body>
+</html>

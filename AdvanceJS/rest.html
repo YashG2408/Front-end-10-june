@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rest operator</title>
+</head>
+<body>
+
+    <!-- ...rest, ...spred : value store -->
+
+    <!-- function parameter store ...rest -->
+
+    <script>
+
+        function test(...virat){
+            let sum = 0
+            for(let data in virat){
+                sum = sum + virat[data]
+            }
+            return sum
+        }
+
+        console.log(test(50,60,30,40,20))
+
+    </script>
+    
+</body>
+</html>

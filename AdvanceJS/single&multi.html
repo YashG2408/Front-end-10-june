@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Single and MultiLevel Task</title>
+</head>
+<body>
+
+    <script>
+
+        class A{
+            data(){
+                console.log("Hello This is Class A...")
+            }
+        }
+        class B extends A{
+            data1(){
+                console.log("Hello This is Class B...")
+            }
+        }
+        class X extends A{
+            data2(){
+                console.log("Hello This Is Class X...")
+            }
+        }
+        class Y extends X{
+            data3(){
+                console.log("Hello This Is Class Y...")
+            }
+        }
+        // class Z{
+        //     data2(){
+        //         console.log("Hello This Is Class Z...")
+        //     }
+        // }
+
+        let user = new B
+        user.data1()
+
+        let user1 = new Y;
+        user1.data2()
+
+    </script>
+    
+</body>
+</html>

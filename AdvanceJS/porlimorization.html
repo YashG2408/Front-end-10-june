@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Porlimorization</title>
+</head>
+<body>
+
+    <script>
+        // method overloading
+
+        // class sum{
+        //     display(x){
+        //         console.log("X value =>",x)
+        //     }
+        //     display(x,y){
+        //         console.log("sum value =>",x+y)
+        //     }
+        // }
+
+        // const data = new sum
+        // console.log(data);
+        // data.display(10,50)
+
+        // method overriding
+
+        class A{
+            dispaly(){
+                console.log("this is Class A...");
+            }
+        }
+
+         class B extends A{
+            dispaly(){
+                console.log("this is Class B...");
+            }
+        }
+
+         class C extends B{
+            dispaly(){
+                console.log("this is Class C...");
+            }
+        }
+
+        // const user = new C;
+        // console.log(user)
+        // user.dispaly()
+
+        const user = [new A,new B,new C]
+        console.log(user)
+
+        user.forEach((data)=>{
+            data.dispaly()
+        })
+
+
+
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Single and Hyrachical Task</title>
+</head>
+<body>
+
+    <script>
+
+        class A{
+            data(){
+                console.log("This is Class A...")
+            }
+        }
+        class B extends A{
+            data1(){
+                console.log("This is Class B ...")
+            }
+        }
+        class C extends B{
+            data2(){
+                console.log("This is Class C...")
+            }
+        }
+        class D extends B{
+            data3(){
+                console.log("This is Class D...")
+            }
+        }
+
+        let user = new B;
+        user.data1();
+
+        let user1 = new C;
+        user.data();
+
+        let user2 = new D;
+        user.data1()
+
+
+    </script>
+    
+</body>
+</html>
