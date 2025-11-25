@@ -1,0 +1,40 @@
+{
+    "admin" : [
+        {
+            "id" : 1,
+            "name" : "admin",
+            "email" : "admin123@gmail.com "
+        },
+        {
+            
+            "id" : 2,
+            "name" : "subadmin",
+            "email" : "subadmin76@gmail.com"
+        },
+        {
+            "id" : 3,
+            "name" : "superadmin",
+            "email" : "superadmin43@gmail.com"
+
+        }
+    
+    ],
+    
+    "Users" : [
+        {
+            "id" : 1,
+            "name" : "surendra",
+            "course" : "Front-End"
+        },
+        {
+            "id" : 2,
+            "name" : "Vinod",
+            "course" :"Back-End"
+        },{
+            "id" : 3,
+            "name" : "harsh",
+            "course" : "UI/UX"
+        }
+    ]
+}
+

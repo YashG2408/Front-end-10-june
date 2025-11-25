@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <table border="2">
+        <thead>
+            <tr>
+                <th>Id </th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Password</th>
+                <th>Pin-Code</th>
+            </tr>
+        </thead>
+        <tbody id="tb">
+
+        </tbody>
+    </table>
+    <table border="2">
+        <thead>
+            <tr>
+                <th>Name </th>
+                <th>Color</th>
+                <th>Price</th>
+                <th>Company</th>
+            </tr>
+        </thead>
+        <tbody id="tcar">
+
+        </tbody>
+    </table>
+
+    
+<script>
+    const Data = () =>{
+
+        fetch('demo.json',{
+            method: "GET"
+        })
+        .then((responce)=>{
+            return responce.json()
+        })
+        .then((dets)=>{
+           let UserData =  dets.Users.map((details)=>{
+                    return (
+                        `
+                        <tr> 
+                            <td> ${details.id}</td> 
+                            <td> ${details.name}</td> 
+                            <td> ${details.email}</td> 
+                            <td> ${details.password}</td> 
+                            <td> ${details.Pin_Code}</td> 
+                            </tr> 
+                        `
+                    )
+                
+            })
+            document.querySelector('#tb').innerHTML += UserData.join('')
+            
+            let cars = dets.Cars.map((cardets)=>{
+              return (
+                `
+                <tr>
+                    <td> ${cardets.Name}</td> 
+                    <td> ${cardets.Color}</td> 
+                    <td> ${cardets.Price}</td> 
+                    <td> ${cardets.Comp}</td> 
+                </tr> 
+                
+                
+                `
+              )
+            })
+            document.querySelector('#tcar').innerHTML += cars
+        })
+    }
+    Data()
+</script>
+
+</body>
+</html>

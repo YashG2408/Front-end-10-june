@@ -1,0 +1,48 @@
+{
+    "Users" :[
+        {
+            "id" : 1,
+            "name" : "Yash",
+            "email" : "yash24@gmail.com",
+            "password" : 123456,
+            "Pin_Code" : 380024
+        },
+
+        {
+            "id" : 2,
+            "name" : "Surya",
+            "email" : "surya@gmail.com",
+            "password" : 382305,
+            "Pin_Code" : 380024
+        },
+        {
+            "id" : 3,
+            "name" : "keyur",
+            "email" : "yaskeyur2@gmail.com",
+            "password" : 9104389,
+            "Pin_Code" : 380024
+        },
+        {
+            "id" : 4,
+            "name" : "parth",
+            "email" : "parth24@gmail.com",
+            "password" : 356541,
+            "Pin_Code" : 380024
+        },
+        {
+            "id" : 5,
+            "name" : "nirav",
+            "email" : "nirav78@gmail.com",
+            "password" : 123456,
+            "Pin_Code" : 380024
+        }
+    ],
+        "Cars" : [
+            {
+                "Name" : "Harrier",
+                "Color" : "Black",
+                "Price" : 1800000,
+                "Comp" : "TATA"
+            }
+        ]
+}

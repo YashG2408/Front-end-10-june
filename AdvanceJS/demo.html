@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Users</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .form{
+            width: 30%;
+            margin: 3vw;
+
+        }
+        form input{
+            padding: 1vw 2vw;
+            margin: 5px 0px;
+            border: 0;
+            outline: none;
+            box-shadow: 0px 0px 3px #333;
+        }
+        form #btn{
+            background: rgb(1, 91, 164);
+            color:#fff;
+            border:0;
+            cursor: pointer;
+            box-shadow: 3px 2px 4px #333;
+        }
+        .card_slider{
+            width: 100%;
+            padding: 10px;
+            display: flex;
+            gap: 20px;
+            
+        }
+        .card{
+            width: 250px;
+            padding: 10px;
+            box-shadow: 0px 0px 3px #333;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: .3s;
+        
+
+        }
+        .card:hover{
+            scale:1.1;
+        
+        }
+        .profile{
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            box-shadow: 3px 2px 4px #333;
+            overflow: hidden;
+            margin-bottom: 20px;
+        }
+        .profile img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .card h1{
+            font-weight: 100;
+            margin-bottom: 10px;
+        }
+        .card h3{
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="form">
+        <form method="post">
+            <input type="text" name="" id="" placeholder="Enter Your Profile...">
+            <input type="text" name="" id="" placeholder="Enter Your Name...">
+            <input type="text" name="" id="" placeholder="Enter Your Occupatioon...">
+            <input type="text" name="" id="" placeholder="Enter Your Information...">
+            <input type="submit" name="" id="btn">
+        </form>
+    </div>
+    <div class="card_slider">
+       
+    </div>
+
+<!-- scipt  -->
+<script>
+    let alllinput = document.querySelectorAll('input')
+
+    let form  = document.querySelector('form');
+
+    form.addEventListener('submit',(dets)=>{
+        dets.preventDefault();
+
+        let card = document.createElement('div');
+        card.classList.add('card');
+
+        let profile = document.createElement('div');
+        profile.classList.add('profile')
+
+        let Image = document.createElement('img');
+        Image.setAttribute('src',alllinput[0].value);
+
+        profile.appendChild(Image);
+        card.appendChild(profile)
+
+
+        let Name = document.createElement('h1');
+        Name.textContent = alllinput[1].value
+
+        let Occupatioon = document.createElement('h3');
+        Occupatioon.textContent = alllinput[2].value
+        
+        let Information = document.createElement('p');
+        Information.textContent = alllinput[3].value
+
+        card.appendChild(Name)
+        card.appendChild(Occupatioon)
+        card.appendChild(Information);
+
+        document.querySelector('.card_slider').appendChild(card)
+
+
+        alllinput.forEach((details)=>{
+            if(details.type != 'submit'){
+                details.value = ''
+            }
+        })
+    })
+     
+   
+
+
+</script>
+
+
+</body>
+</html>

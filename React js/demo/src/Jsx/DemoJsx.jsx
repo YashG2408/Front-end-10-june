@@ -1,15 +1,16 @@
 import React from 'react'
+import Class from '../Component/Class';
 
 function DemoJsx() {
 
-    const data = "Yash Gondaliya"
-    console.log(data)
+   let a = 8
 
   return (
-    <div>
-        <h1>Hello This is Jsx </h1>
-        <h1>{data}</h1>
-    </div>
+    <>
+       <h1>surend</h1>
+       <button >go</button>
+       <Class />
+    </>
   )
 }
 

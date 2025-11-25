@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table th {
+            padding: 20px;
+            border: 1px solid;
+        }
+
+        td {
+            border: 1px solid;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="box1">
+        <h1>Admin Data</h1>
+    </div>
+
+
+
+
+
+
+    <script>
+        function data() {
+            fetch('data1.json', {
+                method: 'GET'
+            })
+                .then((res) => {
+                    return res.json()
+                })
+                .then((res) => {
+                    for (const Admin of res.admin) {
+                        console.log(Admin.id)
+
+                        document.querySelector('.box1').innerHTML = `
+                    <table style="width:400px">
+            <tr>
+
+                <th>ID</th>
+                <th>Name </th>
+                <th>Email</th>
+            </tr>
+            <td id="id">${Admin.id}</td>
+            <td id="name"> ${Admin.name}</td>
+            <td id="email">sdfjhs3</td>
+            
+
+        </table>
+                    `
+
+                        // document.body.innerHTML = `<h1>${data.id}</h1>`
+                        // document.write(`<h1> id:${Admin.id} name : ${Admin.name} Email : ${Admin.email}</h1>`)
+                    }
+                    for (const User of res.users) {
+                        console.log(User)
+                        // document.write(`<h1> id:${User.id} name : ${User.name} Courses : ${User.course}</h1>`)
+
+                    }
+                })
+        }
+        data()
+
+
+    </script>
+
+</body>
+
+</html>

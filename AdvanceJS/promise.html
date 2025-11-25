@@ -1,35 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Promises</title>
 </head>
+
 <body>
 
     <!-- promises : one type of object/class -->
-     <!-- res, error -->
+    <!-- res, error -->
 
-     <!-- 3 state -->
+    <!-- 3 state -->
 
-     <!-- 1) pending : state hold data
+    <!-- 1) pending : state hold data
      2) fullfield : completed data show , api show
      3) rejected : network, syntax, state rejected -->
 
-     <script>
+    <script>
+        let pm = Number(prompt('enter value'))
 
-        let data = new Promise(function(res,rej){
-            let num = 10;
-            if(num == 11){
-                res("Resolve value")
-            }else{
-                rej("rejected value")
+        let promise = new Promise((res, rej) => {
+            if (pm == 12) {
+                res("Number match")
+            } else {
+                rej("Number Not match")
             }
-
         })
-        console.log(data)
+        promise.then((succ) => {
+            console.log(succ);
+        })
 
-     </script>
-    
+        promise.catch((err) => {
+            console.log(err);
+        })
+
+
+    </script>
+
 </body>
+
 </html>

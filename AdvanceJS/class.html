@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON </title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+
+            box-sizing: border-box;
+        }
+
+        #main {
+            width: 100%;
+            height: 100vh;
+           
+        }
+
+        h2 {
+            font-size: 25px;
+            font-weight: 100;
+            margin-bottom: 20px;
+            padding: 5px 10px;
+            display: inline-block;
+            color:#ffff;
+            border-radius: 10px;
+            background:rgb(5, 87, 181);
+            box-shadow: 3px 2px 4px #333;
+        }
+
+        #userdata {
+            margin: 20px 0px;
+        }
+
+
+
+
+        table th {
+            border: 1px solid;
+            padding: 10px;
+        }
+
+        td {
+            text-align: center;
+            border: 1px solid #fff;
+            padding: 10px;
+            color:green;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="main">
+        <h2>Admin Data</h2>
+        <div class="tab1">
+
+        </div>
+        <h2 id="userdata">User Data</h2>
+        <div class="tab2">
+            
+        </div>
+
+
+
+
+        
+        <script>
+            function data() {
+                fetch('data1.json', {
+                    method: 'GET'
+                })
+                    .then((res) => {
+                        return res.json()
+                    })
+                    .then((res) => {
+
+                        let adminadd = '';
+                        for (Admin of res.admin) {
+
+                            adminadd += `
+                            <table>
+                                <th>Id </th>
+                                <th>Name </th>
+                                <th>Email </th>
+                                <tr>
+                                    <td>${Admin.id}</td>
+                                    <td>${Admin.name}</td>
+                                    <td id='email'>${Admin.email}</td>
+                                    </tr>
+                       
+                                    </table>
+                                    `
+                                    document.querySelector('.tab1').innerHTML = adminadd;
+                                }
+
+                                    
+                                let userdata = '';
+                                for (user of res.users) {
+                                    userdata += `
+                                    <table>
+                                        <th>Id </th>
+                                        <th>Name </th>
+                                        <th>Courses </th>
+                                        <tr>
+                                            <td>${user.id}</td>
+                                            <td>${user.name}</td>
+                                            <td id='email'>${user.course}</td>
+                                        </tr>
+                            
+                                        </table>   
+                                        
+                                        `
+                                            document.querySelector('.tab2').innerHTML = userdata;
+                
+                                        }
+                                    })
+                                }
+                                data()
+                        
+
+
+
+
+        </script>
+    </div>
+</body>
+
+</html>

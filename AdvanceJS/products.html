@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products API</title>
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Latest compiled JavaScript -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        body {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            width: 250px;
+            flex-wrap: wrap;
+            height: 350px;
+            padding: 10px;
+        }
+
+        .profile {
+            width: 200px;
+            height: 250px;
+            object-fit: cover;
+            margin: auto;
+        }
+
+        .profile img {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container  p-5">
+        <div class="row">
+            <div class="card">
+            </div>
+        </div>
+    </div>
+
+    <script>
+
+        function prod() {
+            fetch('https://dummyjson.com/products', {
+                method: 'GET'
+            })
+                .then((res) => {
+                    return res.json()
+                })
+                .then((res) => {
+                    console.log(res);
+                    let productdata = res.products.map((data) => {
+                        // console.log(data);
+                        return (
+                            `
+                            
+                            <div class="col-md-4">
+                                   <div class="card" style="width: 18rem;">
+                                      <div class="profile">
+                                         <img src="${data.images}" alt="">
+                                      </div>
+
+                                     <div class="card-body">
+                                        <h5 class="card-title">${data.title}</h5>
+                                        <h5 class="card-title">${data.description}</h5>
+                                        <p class="card-text">${data.price}</a>
+                                     </div>
+                            </div></div>
+                            `
+                        )
+
+
+
+                    })
+                    document.querySelector("body").innerHTML += productdata.join("")
+
+
+                })
+        } prod()
+
+    </script>
+
+</body>
+
+</html>
