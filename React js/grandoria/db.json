@@ -1,0 +1,144 @@
+{
+  "rooms": [
+    {
+      "id": "1",
+      "name": "Deluxe Ocean Suite",
+      "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "ges": 4,
+      "price": "$500",
+      "img": "https://images.pexels.com/photos/1457842/pexels-photo-1457842.jpeg?_gl=1*14u4497*_ga*MTk4NDU4MDcyNi4xNzY1NDQzMjEy*_ga_8JE65Q40S6*czE3NjU5MDczNjEkbzIkZzEkdDE3NjU5MDczNzUkajQ2JGwwJGgw"
+    },
+    {
+      "id": "2",
+      "name": "Executive Business Suite",
+      "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "ges": 3,
+      "price": "$200",
+      "img": "https://images.pexels.com/photos/210604/pexels-photo-210604.jpeg?_gl=1*15mggd7*_ga*MTk4NDU4MDcyNi4xNzY1NDQzMjEy*_ga_8JE65Q40S6*czE3NjU5MDczNjEkbzIkZzEkdDE3NjU5MDc1MTMkajQxJGwwJGgw"
+    },
+    {
+      "id": "3",
+      "name": "Family Garden Room",
+      "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "ges": 6,
+      "price": "$350",
+      "img": "https://images.pexels.com/photos/271624/pexels-photo-271624.jpeg?_gl=1*1areh1t*_ga*MTk4NDU4MDcyNi4xNzY1NDQzMjEy*_ga_8JE65Q40S6*czE3NjU5MDczNjEkbzIkZzEkdDE3NjU5MDc3MzMkajEyJGwwJGgw"
+    },
+    {
+      "id": "5edf",
+      "name": "Taj Hotel",
+      "desc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged",
+      "ges": "4",
+      "price": "400",
+      "img": "https://images.pexels.com/photos/258154/pexels-photo-258154.jpeg?_gl=1*1cj0xu5*_ga*MTk4NDU4MDcyNi4xNzY1NDQzMjEy*_ga_8JE65Q40S6*czE3NjYyMjI5OTMkbzUkZzEkdDE3NjYyMjMwMDkkajQ0JGwwJGgw"
+    }
+  ],
+  "admin": [
+    {
+      "id": "1",
+      "name": "admin1",
+      "email": "admin@gmail.com",
+      "password": 123
+    },
+    {
+      "id": "2",
+      "name": "admin2",
+      "email": "admin2@gmail.com",
+      "password": 1234
+    },
+    {
+      "id": "3",
+      "name": "admin3",
+      "email": "admin3@gmail.com",
+      "password": 12345
+    }
+  ],
+  "about": [
+    {
+      "id": "1",
+      "name": "World-Class Spa",
+      "desc": "Rejuvenating treatments in our award-winning wellness sanctuary",
+      "image": "https://images.pexels.com/photos/161737/pedicure-massage-therapist-spa-161737.jpeg?_gl=1*iv01ql*_ga*MTk4NDU4MDcyNi4xNzY1NDQzMjEy*_ga_8JE65Q40S6*czE3NjU5MDczNjEkbzIkZzEkdDE3NjU5MDg3NzAkajI3JGwwJGgw"
+    },
+    {
+      "id": "2",
+      "name": "Gourmet Dining",
+      "desc": "Michelin-starred cuisine crafted by renowned executive chefs",
+      "image": "https://images.pexels.com/photos/941861/pexels-photo-941861.jpeg?_gl=1*uqzcyl*_ga*MTk4NDU4MDcyNi4xNzY1NDQzMjEy*_ga_8JE65Q40S6*czE3NjU5MDczNjEkbzIkZzEkdDE3NjU5MDkwNTAkajM5JGwwJGgw"
+    },
+    {
+      "id": "3",
+      "name": "Prime Location",
+      "desc": "Nestled in the heart of the city with breathtaking panoramic views",
+      "image": "https://images.pexels.com/photos/4237154/pexels-photo-4237154.jpeg?_gl=1*evzk9u*_ga*MTk4NDU4MDcyNi4xNzY1NDQzMjEy*_ga_8JE65Q40S6*czE3NjU5MDczNjEkbzIkZzEkdDE3NjU5MDkxNDEkajE2JGwwJGgw"
+    }
+  ],
+  "amenties": [
+    {
+      "id": "1",
+      "name": "Infinity Pool & Sun Deck",
+      "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.",
+      "time": "Open 8 AM - 124PM",
+      "type": "Heated pool year-round",
+      "services": "Poolside bar service",
+      "image": "https://images.pexels.com/photos/2147479/pexels-photo-2147479.jpeg?_gl=1*abrpta*_ga*MTk4NDU4MDcyNi4xNzY1NDQzMjEy*_ga_8JE65Q40S6*czE3NjYwNzc3MzQkbzMkZzEkdDE3NjYwNzc3NDkkajQ1JGwwJGgw"
+    },
+    {
+      "id": "2",
+      "name": "Luxury Spa & Wellness",
+      "desc": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.",
+      "time": "Book treatments online",
+      "type": "Couples massage rooms",
+      "services": "Organic spa products 2",
+      "image": "https://images.pexels.com/photos/6663374/pexels-photo-6663374.jpeg?_gl=1*a5sfnt*_ga*MTk4NDU4MDcyNi4xNzY1NDQzMjEy*_ga_8JE65Q40S6*czE3NjYwNzc3MzQkbzMkZzEkdDE3NjYwNzgwMjkkajMzJGwwJGgw"
+    },
+    {
+      "id": "3",
+      "name": "Signature Restaurant",
+      "desc": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis.",
+      "time": "Michelin-starred chef",
+      "type": "Award-winning wine cellar",
+      "services": "Open Tuesday - Sunday",
+      "image": "https://images.pexels.com/photos/35176581/pexels-photo-35176581.jpeg?_gl=1*1baar1w*_ga*MTk4NDU4MDcyNi4xNzY1NDQzMjEy*_ga_8JE65Q40S6*czE3NjYwNzc3MzQkbzMkZzEkdDE3NjYwNzgzODYkajU5JGwwJGgw"
+    },
+    {
+      "id": "4",
+      "name": "24/7 Fitness Center",
+      "desc": "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi.",
+      "time": "State-of-the-art equipment",
+      "type": "Personal trainers available",
+      "services": "Complimentary towels",
+      "image": "https://images.pexels.com/photos/3764568/pexels-photo-3764568.jpeg?_gl=1*3ngg1r*_ga*MTk4NDU4MDcyNi4xNzY1NDQzMjEy*_ga_8JE65Q40S6*czE3NjYwNzc3MzQkbzMkZzEkdDE3NjYwNzg1ODQkajM3JGwwJGgw"
+    }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "name": "Yash",
+      "email": "yash@gmail.com",
+      "status": "unblock",
+      "password": "12345"
+    },
+    {
+      "id": "2",
+      "name": "Nirav",
+      "email": "nirav@gmail.com",
+      "status": "unblock",
+      "password": "123456"
+    },
+    {
+      "id": "3",
+      "name": "Surya",
+      "email": "surya@gmail.com",
+      "status": "unblock",
+      "password": "1234567"
+    },
+    {
+      "id": "1766771164058",
+      "name": "Yash",
+      "email": "yash@gmail.com",
+      "password": "12345",
+      "status": "unblock"
+    }
+  ]
+}
