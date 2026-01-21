@@ -1,0 +1,78 @@
+{
+  "services": [
+    {
+      "id": "2",
+      "name": "Steel 1 welding",
+      "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus augue.",
+      "img": "https://media.istockphoto.com/id/1192097505/photo/metal-worker-using-a-grinder.jpg?s=612x612&w=0&k=20&c=c2N4MG21oiB9QIJ4MMl_moRaDRx3QEHbCieIHDBXY3E="
+    },
+    {
+      "id": "3",
+      "name": "pipe weldings",
+      "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus augue.",
+      "img": "https://t4.ftcdn.net/jpg/03/20/56/43/360_F_320564310_N3LkQmlFCWKYb6pT61xJekimgZMfkiny.jpg"
+    },
+    {
+      "id": "4",
+      "name": "Custom welding",
+      "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus augue.",
+      "img": "https://media.istockphoto.com/id/1310455312/photo/welding-argon-results-welding-on-the-metal-of-the-foreground.jpg?s=612x612&w=0&k=20&c=Wn3VToZYmGRsPE2by7r3ODy9D_pfgaFv9bWVWfaVtok="
+    },
+    {
+      "id": "1767336058434",
+      "name": "Metal Works",
+      "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus augue.",
+      "img": "https://images.pexels.com/photos/1457842/pexels-photo-1457842.jpeg?_gl=1*14u4497*_ga*MTk4NDU4MDcyNi4xNzY1NDQzMjEy*_ga_8JE65Q40S6*czE3NjU5MDczNjEkbzIkZzEkdDE3NjU5MDczNzUkajQ2JGwwJGgw"
+    }
+  ],
+  "admin": [
+    {
+      "id": "1",
+      "name": "admin1",
+      "email": "admin@gmail.com",
+      "password": 123
+    },
+    {
+      "id": "2",
+      "name": "admin2",
+      "email": "admin2@gmail.com",
+      "password": 1234
+    },
+    {
+      "id": "3",
+      "name": "admin3",
+      "email": "admin3@gmail.com",
+      "password": 12345
+    }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "name": "Yash",
+      "email": "yash@gmail.com",
+      "status": "unblock",
+      "password": "12345"
+    },
+    {
+      "id": "2",
+      "name": "Nirav",
+      "email": "nirav@gmail.com",
+      "status": "unblock",
+      "password": "123456"
+    },
+    {
+      "id": "3",
+      "name": "Surya",
+      "email": "surya@gmail.com",
+      "status": "unblock",
+      "password": "1234567"
+    },
+    {
+      "id": "1766771164058",
+      "name": "Yash",
+      "email": "yash@gmail.com",
+      "password": "12345",
+      "status": "unblock"
+    }
+  ]
+}
