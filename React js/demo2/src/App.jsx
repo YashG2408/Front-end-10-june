@@ -1,32 +1,65 @@
-import { useState } from 'react'
+import React from 'react'
+// import ClassState from './State/ClassState'
+// import ClassProps from './Props/ClassProps'
+// import FunProps from './Props/FunProps'
+// import ClassState from './State/ClassState'
+// import FunState from './State/FunState'
+// import Form from './FormHandling/form'
+// import Demoform from './FormHandling/Demoform'
+// import ProductAxios from './Effect/ProductAxios'
+// import GamingAxios from './Effect/GamingAxios'
+// import Tailwind from './Tail/Tailwind'
+// import Header from './Website/Header'
 
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <div>
+      {/* <ClassState /> */}
+
+      {/* <div className="container"> */}
+          {/* <div className="row"> */}
+
+         {/* <ClassProps img="https://hips.hearstapps.com/hmg-prod/images/ferrari-e-suv-2-copy-680287cac36b2.jpg?crop=1.00xw:0.838xh;0,0.0673xh" title="This IS Lamboughini" desc="Lambhourghni is Fastest car in world and this car is so costly and sport car.." />
+      <ClassProps img="https://m.media-amazon.com/images/I/71HE+SIzIcL._AC_UF1000,1000_QL80_.jpg" title="This IS Lamboughini" desc="Lambhourghni is Fastest car in world and this car is so costly and sport car.." />
+      <ClassProps img="https://i.ytimg.com/vi/zEr-mm8OSGo/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLAm0vvR3Ud4t5gSl4BF1LoxWA70Cw" title="This IS Lamboughini" desc="Lambhourghni is Fastest car in world and this car is so costly and sport car.." />
+      <ClassProps img="https://hips.hearstapps.com/hmg-prod/images/ferrari-e-suv-2-copy-680287cac36b2.jpg?crop=1.00xw:0.838xh;0,0.0673xh" title="This IS Lamboughini" desc="Lambhourghni is Fastest car in world and this car is so costly and sport car.." />
+      <ClassProps img="https://hips.hearstapps.com/hmg-prod/images/ferrari-e-suv-2-copy-680287cac36b2.jpg?crop=1.00xw:0.838xh;0,0.0673xh" title="This IS Lamboughini" desc="Lambhourghni is Fastest car in world and this car is so costly and sport car.." />
+      <ClassProps img="https://hips.hearstapps.com/hmg-prod/images/ferrari-e-suv-2-copy-680287cac36b2.jpg?crop=1.00xw:0.838xh;0,0.0673xh" title="This IS Lamboughini" desc="Lambhourghni is Fastest car in world and this car is so costly and sport car.." />
+      <ClassProps img="https://hips.hearstapps.com/hmg-prod/images/ferrari-e-suv-2-copy-680287cac36b2.jpg?crop=1.00xw:0.838xh;0,0.0673xh" title="This IS Lamboughini" desc="Lambhourghni is Fastest car in world and this car is so costly and sport car.." />
+      <ClassProps img="https://hips.hearstapps.com/hmg-prod/images/ferrari-e-suv-2-copy-680287cac36b2.jpg?crop=1.00xw:0.838xh;0,0.0673xh" title="This IS Lamboughini" desc="Lambhourghni is Fastest car in world and this car is so costly and sport car.." />
+      <ClassProps img="https://hips.hearstapps.com/hmg-prod/images/ferrari-e-suv-2-copy-680287cac36b2.jpg?crop=1.00xw:0.838xh;0,0.0673xh" title="This IS Lamboughini" desc="Lambhourghni is Fastest car in world and this car is so costly and sport car.." />
+      <ClassProps img="https://hips.hearstapps.com/hmg-prod/images/ferrari-e-suv-2-copy-680287cac36b2.jpg?crop=1.00xw:0.838xh;0,0.0673xh" title="This IS Lamboughini" desc="Lambhourghni is Fastest car in world and this car is so costly and sport car.." />
+      <ClassProps img="https://hips.hearstapps.com/hmg-prod/images/ferrari-e-suv-2-copy-680287cac36b2.jpg?crop=1.00xw:0.838xh;0,0.0673xh" title="This IS Lamboughini" desc="Lambhourghni is Fastest car in world and this car is so costly and sport car.." />
+      <ClassProps img="https://hips.hearstapps.com/hmg-prod/images/ferrari-e-suv-2-copy-680287cac36b2.jpg?crop=1.00xw:0.838xh;0,0.0673xh" title="This IS Lamboughini" desc="Lambhourghni is Fastest car in world and this car is so costly and sport car.." /> */}
+      
+      
+      {/* <FunProps img="https://m.media-amazon.com/images/I/71HE+SIzIcL._AC_UF1000,1000_QL80_.jpg" title="This IS Lamboughini" desc="Lambhourghni is Fastest car in world and this car is so costly and sport car.." />
+      <FunProps img="https://m.media-amazon.com/images/I/71HE+SIzIcL._AC_UF1000,1000_QL80_.jpg" title="This IS Lamboughini" desc="Lambhourghni is Fastest car in world and this car is so costly and sport car.." />
+      <FunProps img="https://m.media-amazon.com/images/I/71HE+SIzIcL._AC_UF1000,1000_QL80_.jpg" title="This IS Lamboughini" desc="Lambhourghni is Fastest car in world and this car is so costly and sport car.." />
+      <FunProps img="https://m.media-amazon.com/images/I/71HE+SIzIcL._AC_UF1000,1000_QL80_.jpg" title="This IS Lamboughini" desc="Lambhourghni is Fastest car in world and this car is so costly and sport car.." />
+      <FunProps img="https://m.media-amazon.com/images/I/71HE+SIzIcL._AC_UF1000,1000_QL80_.jpg" title="This IS Lamboughini" desc="Lambhourghni is Fastest car in world and this car is so costly and sport car.." />
+      <FunProps img="https://m.media-amazon.com/images/I/71HE+SIzIcL._AC_UF1000,1000_QL80_.jpg" title="This IS Lamboughini" desc="Lambhourghni is Fastest car in world and this car is so costly and sport car.." />
+      <FunProps img="https://m.media-amazon.com/images/I/71HE+SIzIcL._AC_UF1000,1000_QL80_.jpg" title="This IS Lamboughini" desc="Lambhourghni is Fastest car in world and this car is so costly and sport car.." />
+      <FunProps img="https://m.media-amazon.com/images/I/71HE+SIzIcL._AC_UF1000,1000_QL80_.jpg" title="This IS Lamboughini" desc="Lambhourghni is Fastest car in world and this car is so costly and sport car.." />
+      <FunProps img="https://m.media-amazon.com/images/I/71HE+SIzIcL._AC_UF1000,1000_QL80_.jpg" title="This IS Lamboughini" desc="Lambhourghni is Fastest car in world and this car is so costly and sport car.." /> */}
+
+
+          {/* <ClassState /> */}
+
+          {/* <FunState /> */}
+        {/* <Form /> */}
+        {/* <Demoform /> */}
+        {/* <ProductAxios /> */}
+        {/* <GamingAxios /> */}
+        {/* <Tailwind /> */}
+        <Index />
+        
+
+        
+    {/* </div> */}
+      {/* </div> */}
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
   )
 }
 

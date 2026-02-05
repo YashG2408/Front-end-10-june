@@ -55,7 +55,7 @@ function AmentiesAdd() {
                 <div className="row justify-content-center mb-5" data-aos="fade-up" data-aos-delay={200}>
                     <div className="col-lg-10">
                         <div className="contact-form-wrapper">
-                            <h2 className="text-center mt-4">Send a Message</h2>
+                            <h2 className="text-center mt-4">Add Aminities</h2>
                             <form onSubmit={addamenties} method="post" className="php-email-form mt-4">
                                 <div className="row g-3">
                                     <div className="col-md-6">

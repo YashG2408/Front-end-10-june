@@ -13,3 +13,8 @@ img{
     /* margin-top: 10px; */
     gap: 10px;
 }
+h1{
+    color: green;
+    text-align: center;
+    letter-spacing:  1px;
+}

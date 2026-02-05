@@ -5,7 +5,7 @@
       "name": "Deluxe Ocean Suite",
       "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       "ges": 4,
-      "price": "$500",
+      "price": "$700",
       "img": "https://images.pexels.com/photos/1457842/pexels-photo-1457842.jpeg?_gl=1*14u4497*_ga*MTk4NDU4MDcyNi4xNzY1NDQzMjEy*_ga_8JE65Q40S6*czE3NjU5MDczNjEkbzIkZzEkdDE3NjU5MDczNzUkajQ2JGwwJGgw"
     },
     {
@@ -23,14 +23,6 @@
       "ges": 6,
       "price": "$350",
       "img": "https://images.pexels.com/photos/271624/pexels-photo-271624.jpeg?_gl=1*1areh1t*_ga*MTk4NDU4MDcyNi4xNzY1NDQzMjEy*_ga_8JE65Q40S6*czE3NjU5MDczNjEkbzIkZzEkdDE3NjU5MDc3MzMkajEyJGwwJGgw"
-    },
-    {
-      "id": "5edf",
-      "name": "Taj Hotel",
-      "desc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged",
-      "ges": "4",
-      "price": "400",
-      "img": "https://images.pexels.com/photos/258154/pexels-photo-258154.jpeg?_gl=1*1cj0xu5*_ga*MTk4NDU4MDcyNi4xNzY1NDQzMjEy*_ga_8JE65Q40S6*czE3NjYyMjI5OTMkbzUkZzEkdDE3NjYyMjMwMDkkajQ0JGwwJGgw"
     }
   ],
   "admin": [
@@ -109,13 +101,22 @@
       "type": "Personal trainers available",
       "services": "Complimentary towels",
       "image": "https://images.pexels.com/photos/3764568/pexels-photo-3764568.jpeg?_gl=1*3ngg1r*_ga*MTk4NDU4MDcyNi4xNzY1NDQzMjEy*_ga_8JE65Q40S6*czE3NjYwNzc3MzQkbzMkZzEkdDE3NjYwNzg1ODQkajM3JGwwJGgw"
+    },
+    {
+      "id": "b060",
+      "name": "Deluxe Ocean Suite",
+      "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "time": "Open 8 AM - 124PM",
+      "type": "Heated pool year-round",
+      "services": "Organic spa products 2",
+      "image": "https://images.pexels.com/photos/2147479/pexels-photo-2147479.jpeg?_gl=1*abrpta*_ga*MTk4NDU4MDcyNi4xNzY1NDQzMjEy*_ga_8JE65Q40S6*czE3NjYwNzc3MzQkbzMkZzEkdDE3NjYwNzc3NDkkajQ1JGwwJGgw"
     }
   ],
   "users": [
     {
       "id": "1",
-      "name": "Yash",
-      "email": "yash@gmail.com",
+      "name": "Nirav",
+      "email": "nirav@gmail.com",
       "status": "unblock",
       "password": "12345"
     },

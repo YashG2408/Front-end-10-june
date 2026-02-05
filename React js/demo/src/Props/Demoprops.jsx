@@ -16,7 +16,7 @@ class Demoprops extends Component {
   <div className="card-body">
     <h5 className="card-title">{this.data.name}</h5>
     <p className="card-text">{this.data.desc.slice(0,150)}</p>
-    <button className='btn btn-success'>Gets Started</button>
+    <button className='btn btn-danger'>Gets Started</button>
     
   </div>
 </div>
@@ -26,4 +26,4 @@ class Demoprops extends Component {
   }
 }
 
-export default Demoprops
+export default Demoprops;

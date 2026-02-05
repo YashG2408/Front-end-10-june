@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PORTFOLIO</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js" integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    *{
+        margin: 0;
+        padding: 0;
+        
+       
+    }
+    .container{
+          width:100%;
+          padding: 5px;
+          background: #333;
+          color:#fff;
+          transition: 1s;
+
+    }
+    .nav{
+      width: 100%;
+      height: 40px;
+     position: fixed;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1vw 8vw;;
+    }
+    .nav #nm{
+      color:rgb(206, 86, 6);
+      letter-spacing: 2px;
+    }
+    .links{
+      display: flex;
+      gap:4vw;
+    }
+    .links a{
+      text-decoration: none;
+      font-size: 1.4vw;
+     color:#fff;
+    }
+    .icons{
+      display: flex;
+      align-items: center;
+      gap:1vw;
+
+    }
+    .icons a{
+      font-size: 20px;
+      cursor: pointer;
+      background: #333;
+      color:#fff;
+      padding: 5px ;
+      border-radius: 50%;
+        
+    }
+    #sec-part{
+      width: 100%;
+      padding: 10px;
+      display: flex;
+      margin-top: 100px;
+      padding:1vw 8vw;
+     
+    }
+    #sec-part .left{
+      width: 50%;
+      
+    
+    }
+    .left .profile{
+        width: 400px;
+        height: 400px;
+        border-radius: 50%;
+        overflow: hidden;
+        box-shadow: 0px 0px 5px #333;
+    }
+    .profile img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    #sec-part .right{
+     
+      
+      width: 50%;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    }
+    .right #hi{
+      margin-bottom: 20px;
+      font-size: 30px;
+    }
+    .right h3{
+      margin-bottom: 10px;
+      font-size: 20px;
+    }
+    .right h1{
+      font-weight: 100;
+      
+    }
+    .right h3 span{
+      color:rgb(206, 86, 6);
+      font-size: 25px;
+    }
+    .right p{
+      margin: 10px 0px;
+    }
+    .btns{
+      display: flex;
+      gap:2vw;
+      margin-top: 20px;
+    }
+    .btns button{
+      padding: .9vw 2vw;
+      border: 0;
+      background: rgb(206, 86, 6);
+      font-size: 16px;
+      border-radius: 5px;
+      color:#fff;
+
+    }
+    .div{
+      width: 100%;
+      height: 700px;
+
+    }
+  </style>
+</head>
+<body>
+
+    <div class="container">
+
+      <!-- nav open  -->
+      <div class="nav">
+        <h2><span id="nm">Yash</span> Gondaliya</h2>
+        <div class="links">
+          <a href="" target=".nav">Home</a>
+          <a href="">About</a>
+          <a href="">Experience</a>
+          <a href="">Projects</a>
+          </div>
+          <div class="icons">
+            <a href=""><i class="fa-brands fa-github"></i></a>
+            <a href=""><i class="fa-brands fa-linkedin"></i></a>
+          </div>
+        </div>
+        <!-- nav open -->
+
+<!-- sec-part open -->
+        <div id="sec-part">
+          <div class="left">
+            <div class="profile">
+
+              <img src="yas.jpg" alt="">
+            </div>
+          </div>
+          <div class="right">
+            <p id="hi">Hi,</p>
+            <h3>I'm <span>Yash</span></h3>
+            <h1> Frontend Devloper</h1>
+              <p>My name is Yash Gondaliya, and I am a
+21-year-old learner who enjoys building
+things with technology. I have hands-on
+skills in HTML, CSS, and JavaScript, and I
+am currently growing deeper in React
+and modern frontend development. I also
+have around 1 years of experience in
+Graphic Design and typing, which has
+helped me develop accuracy, focus, and
+discipline in my work.
+I enjoy solving problems, understanding
+how things work behind the scenes, and
+creating clean user interfaces. Whenever
+I learn something new in coding, I try to
+apply it by building small projects and
+improving my logic. I am also interested
+in growing my knowledge of APIs, website
+structure, and the full workflow of a web
+project.</p>
+
+                <div class="btns">
+                  <button>Learn More </button><button>Hire Me</button>
+                </div>
+
+          </div>
+        </div>
+        <!-- sec-part close -->
+            <div class="div">
+
+            </div>
+            <div class="div">
+
+            </div>
+
+      </div>
+    
+
+      <script>
+
+      </script>
+
+</body>
+</html>

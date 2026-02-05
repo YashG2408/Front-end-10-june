@@ -5,18 +5,18 @@ function Aheader() {
 
     const redirect = useNavigate()
 
-    useEffect(()=>{
-        if(!localStorage.getItem("Aid")){
+    useEffect(() => {
+        if (!localStorage.getItem("Aid")) {
             redirect("/alogin")
         }
     })
 
-    const logout =() =>{
+    const logout = () => {
         localStorage.removeItem("Aid")
         localStorage.removeItem("Aname")
         console.log("logout Successfull");
         redirect("/alogin")
-        
+
     }
 
     return (
@@ -61,27 +61,27 @@ function Aheader() {
                                         <li><NavLink to="/amentiesadd">AmenitiesAdd</NavLink></li>
                                     </ul>
                                 </li>
-                                    {(()=>{
-                                        if(localStorage.getItem("Aid")){
-                                            return(
-                                                  <li><Link>Yash{localStorage.getItem("Aname")}</Link></li>
-                                            )
-                                        }
-                                    })()}
+                                {(() => {
+                                    if (localStorage.getItem("Aid")) {
+                                        return (
+                                            <li><Link>Yash{localStorage.getItem("Aname")}</Link></li>
+                                        )
+                                    }
+                                })()}
 
-                                     {(()=>{
-                                        if(localStorage.getItem("Aid")){
-                                            return(
-                                                  <li><Link onClick={logout}>Log Out</Link></li>
-                                            )
-                                        }
-                                        else{
-                                            return(
-                                                <li><Link to="/alogin">Login</Link></li>
-                                            )
-                                        }
-                                    })()}
-                              
+                                {(() => {
+                                    if (localStorage.getItem("Aid")) {
+                                        return (
+                                            <li><Link onClick={logout}>Log Out</Link></li>
+                                        )
+                                    }
+                                    else {
+                                        return (
+                                            <li><Link to="/alogin">Login</Link></li>
+                                        )
+                                    }
+                                })()}
+
                             </ul>
                             <i className="mobile-nav-toggle d-xl-none bi bi-list" />
                         </nav>

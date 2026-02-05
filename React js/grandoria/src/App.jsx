@@ -27,6 +27,7 @@ import Ulogin from './Website/Pages/user/Ulogin'
 import { Bounce, ToastContainer } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
 import Register from './Website/Pages/user/Register'
+import Editprofile from './Website/Pages/Editprofile'
 
 function App() {
   return (
@@ -71,8 +72,9 @@ function App() {
         <Route path='/alogin' element={<Alogin />} />
 
         {/* user */}
-        <Route path='ulogin' element={<Ulogin />} />
-        <Route path='register' element={<Register />} />
+        <Route path='/ulogin' element={<Ulogin />} />
+        <Route path='/register' element={<Register />} />
+        <Route path='/edit' element={<Editprofile />} />
 
 
 
