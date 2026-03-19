@@ -9,12 +9,12 @@ function GamingAxios() {
 
     const data = async()=>{
         const res = await axios.get("https://www.freetogame.com/gaming")
-        console.log(res);
+        console.log(res.data);
         
     }
   return (
     <div>
-
+        
     </div>
   )
 }

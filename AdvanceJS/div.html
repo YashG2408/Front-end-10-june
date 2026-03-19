@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .box{
+            width: 200px ;
+            height: 200px;
+            border: 1px solid;
+        }
+        .box img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+    </style>
+</head>
+<body>
+    
+
+    <script>
+
+        let str = ''
+
+        for(i=0; i<=100; i++){
+            str += `<div class='box'><img src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTx_emCnAD-nsDchAVNxJw49xF7O2_5Yjzdow&s" ></div>`
+
+            document.body.innerHTML = str
+        }
+
+    </script>
+</body>
+</html>

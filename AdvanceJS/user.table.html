@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Userdata</title>
     <style>
-        body{
+        body {
             display: flex;
         }
     </style>
@@ -28,36 +28,36 @@
 
         </tbody>
 
-    <table border="5">
-        <thead>
-            <tr>
-                <th>id</th>
-                <th>Name</th>
-                <th>password</th>
-                <th>City</th>
-                <th>zip-code</th>
-            </tr>
-        </thead>
-        <tbody class="tg">
+        <table border="5">
+            <thead>
+                <tr>
+                    <th>id</th>
+                    <th>Name</th>
+                    <th>password</th>
+                    <th>City</th>
+                    <th>zip-code</th>
+                </tr>
+            </thead>
+            <tbody class="tg">
 
-        </tbody>
+            </tbody>
 
-        <script>
-           function fakeapiuser(){
-                 fetch('https://dummyjson.com/users',{
+            <script>
+                function fakeapiuser() {
+                    fetch('https://dummyjson.com/users', {
 
-                method: "GET"
-            }) 
-            
-                .then((res) => {
-                    return res.json()
-                })
-                .then((res) => {
-                    // console.log(res.users)
+                        method: "GET"
+                    })
 
-                    let Data = res.users.map((data,index)=>{
-                        return (
-                        `
+                        .then((res) => {
+                            return res.json()
+                        })
+                        .then((res) => {
+                            // console.log(res.users)
+
+                            let Data = res.users.map((data, index) => {
+                                return (
+                                    `
                        <tr>
                             <td>${data.id}</td>
                              <td>${data.firstName}</td>
@@ -68,28 +68,28 @@
                         
        8
                         `
-                        
-                        )
+
+                                )
+                            })
+                            document.querySelector(".tbody").innerHTML += Data.join("")
+
+                        })
+                }
+                fakeapiuser()
+
+                function dummyapiuser() {
+                    fetch('https://fakestoreapi.com/users', {
+                        method: "GET"
                     })
-                    document.querySelector(".tbody").innerHTML += Data.join("")
+                        .then((res) => {
+                            return res.json()
+                        })
+                        .then((res) => {
+                            console.log(res)
 
-                    })
-           }
-           fakeapiuser()
-
-           function dummyapiuser(){
-                fetch('https://fakestoreapi.com/users',{
-                    method :"GET"
-                })
-                .then((res)=>{
-                    return res.json()
-                })
-                .then((res)=>{
-                    console.log(res)
-
-                    let dummydata = res.map((data,index)=>{
-                        return(
-                             `
+                            let dummydata = res.map((data, index) => {
+                                return (
+                                    `
                             <tr>
                             <td>${data.id}</td>
                              <td>${data.name.firstname}</td>
@@ -99,18 +99,18 @@
                         </tr>
                         
                         `
-                        )
-                      
-                    })
-                    
-                     document.querySelector(".tg").innerHTML += dummydata.join("")
+                                )
 
-                })
+                            })
 
-           }dummyapiuser()
+                            document.querySelector(".tg").innerHTML += dummydata.join("")
 
-                    
-        </script>
+                        })
+
+                } dummyapiuser()
+
+
+            </script>
 
 </body>
 

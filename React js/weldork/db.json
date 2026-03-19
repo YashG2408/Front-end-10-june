@@ -23,6 +23,18 @@
       "name": "Metal Works",
       "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tellus augue.",
       "img": "https://images.pexels.com/photos/1457842/pexels-photo-1457842.jpeg?_gl=1*14u4497*_ga*MTk4NDU4MDcyNi4xNzY1NDQzMjEy*_ga_8JE65Q40S6*czE3NjU5MDczNjEkbzIkZzEkdDE3NjU5MDczNzUkajQ2JGwwJGgw"
+    },
+    {
+      "id": "1770568544383",
+      "name": "Family Garden Room",
+      "desc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged",
+      "img": "https://www.steelspecialtiesinc.net/wp-content/uploads/2021/01/el-paso-metal-fabrication-1024x683.jpeg"
+    },
+    {
+      "id": "1771825936107",
+      "name": "Taj Hotel",
+      "desc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged",
+      "img": "https://images.pexels.com/photos/1457842/pexels-photo-1457842.jpeg?_gl=1*14u4497*_ga*MTk4NDU4MDcyNi4xNzY1NDQzMjEy*_ga_8JE65Q40S6*czE3NjU5MDczNjEkbzIkZzEkdDE3NjU5MDczNzUkajQ2JGwwJGgw"
     }
   ],
   "admin": [

@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>hexashop</title>
+  <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+
+  <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.css">
+
+  <link rel="stylesheet" href="assets/css/templatemo-hexashop.css">
+
+  <link rel="stylesheet" href="assets/css/owl-carousel.css">
+
+  <link rel="stylesheet" href="assets/css/lightbox.css">
+  <!-- jQuery -->
+
+  <!-- Owl Carousel CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+
+  <!-- Owl Carousel JS -->
+
+</head>
+
+<body>
+  <div id="root"></div>
+  <script type="module" src="/src/main.jsx"></script>
+  <script src="assets/js/jquery-2.1.0.min.js"></script>
+
+  <!-- Bootstrap -->
+  <script src="assets/js/popper.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+
+  <!-- Plugins -->
+  <script src="assets/js/owl-carousel.js"></script>
+  <script src="assets/js/accordions.js"></script>
+  <script src="assets/js/datepicker.js"></script>
+  <script src="assets/js/scrollreveal.min.js"></script>
+  <script src="assets/js/waypoints.min.js"></script>
+  <script src="assets/js/jquery.counterup.min.js"></script>
+  <script src="assets/js/imgfix.min.js"></script>
+  <script src="assets/js/slick.js"></script>
+  <script src="assets/js/lightbox.js"></script>
+  <script src="assets/js/isotope.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+
+
+  <!-- Global Init -->
+  <script src="assets/js/custom.js"></script>
+
+  <script>
+
+    $(function () {
+      var selectedClass = "";
+      $("p").click(function () {
+        selectedClass = $(this).attr("data-rel");
+        $("#portfolio").fadeTo(50, 0.1);
+        $("#portfolio div").not("." + selectedClass).fadeOut();
+        setTimeout(function () {
+          $("." + selectedClass).fadeIn();
+          $("#portfolio").fadeTo(50, 1);
+        }, 500);
+
+      });
+    });
+
+    $(document).ready(function () {
+      $(".owl-men-item,.owl-women-item,.owl-kid-item").owlCarousel({
+        loop: true,
+        margin: 10,
+        nav: true,
+        items: 3,
+        autoplay: true,
+        autoplayTimeout: 3000,
+        responsive: {
+          0: { items: 1 },
+          600: { items: 2 },
+          1000: { items: 3 }
+        }
+      });
+    });
+
+  </script>
+</body>
+
+</html>

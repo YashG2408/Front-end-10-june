@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding:0;
+            box-sizing: border-box;
+        }
+        .main{
+            width: 100%;
+            height: 100vh;
+        }
+        .box{
+            width: 300px;
+            padding: 10px;
+            box-shadow: 0px 0px 3px #333;
+            margin: 100px auto;
+            border-radius: 5px;
+            text-align: center;
+        }
+        .box input{
+            padding: 5px 15px;
+            outline: none;
+
+        }
+        .box p{
+            margin-bottom: 15px;
+        }
+        button{
+            padding: 5px 15px;
+            background-color: black;
+            color: white;
+            border: none;
+            margin: 10px 0px;
+        }
+    </style>
+</head>
+<body>
+<div class="main">
+        <div class="box">
+            <input type="text" name="" id="name" placeholder="Enter Your Name...">
+            <p id="name-val"></p>
+            <input type="text" name="" id="year" placeholder="Enter Birth yaer..">
+            <p id="year-val"></p>
+            <button onclick="adddata()">Click me</button>
+            <p id="result"></p>
+        </div>
+        
+        <!-- script open -->
+        <script>
+            let name = document.querySelector("#name")
+            let nameval = document.querySelector("#name-val")
+            let year = document.querySelector("#year")
+            let yearval = document.querySelector("#year-val")
+            let result = document.querySelector("#result")
+
+            class Validate {
+                constructor(name,year){
+                    this.name= name
+                    this.year= year
+                }
+
+                yash(){
+                    let date = new Date()
+                    return date.getFullYear()-this.year
+                }
+
+            }
+
+            const adddata = ()=>{
+
+                const user = new Validate(name.value,year.value)
+
+                if(name.value===''){
+                    nameval.textContent = "Pls Filled Required*"
+                    nameval.style.color = "red"
+                    return
+                }else{
+                     nameval.textContent = ""
+                    nameval.style.color = ""
+                }
+
+                if(year.value===''){
+                    yearval.textContent = "Birth Year required."
+                    yearval.style.color = "red"
+                    return
+                }else if(isNaN(year.value)){
+                    yearval.textContent = `'${year.value}' is not a number`
+                    yearval.style.color = "red"
+                    return
+                }else if(year.value.length>4){
+                    yearval.textContent = "Only 4 Digit allow.."
+                    yearval.style.color = "red"
+                    return
+                }else{
+                     yearval.textContent = ""
+                    yearval.style.color = ""
+
+                    result.textContent = `${user.name} you are ${user.yash()} year old`
+                    name.value = ""
+                    year.value = ""
+                }
+
+            }
+        </script>
+    
+</div>
+</body>
+</html>

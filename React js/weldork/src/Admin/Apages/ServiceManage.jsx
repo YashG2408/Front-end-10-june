@@ -195,4 +195,4 @@ function ServiceManage() {
     )
 }
 
-export default ServiceManage
+export default ServiceManage;

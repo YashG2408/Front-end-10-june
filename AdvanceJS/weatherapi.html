@@ -72,25 +72,25 @@
 
     <div class="container">
         <div class="inp-btn">
-            <input type="text" placeholder="Enter City Name">
-            <button><i class="fa-solid fa-magnifying-glass"></i></button>
+            <input type="text" id="inp" placeholder="Enter City Name">
+            <button id="srhbtn"><i class="fa-solid fa-magnifying-glass"></i></button>
         </div>
         <div class="cel">
             <div class="profile">
                 <img src="https://img.freepik.com/premium-vector/weather-forecast-partly-sunny-icon-color-vector-illustration_755164-2407.jpg" alt="">
             </div>
-            <h1>21 <sup>C</sup></h1>
-            <p>Amreli</p>
+            <h1 id="temp">21 <sup>C</sup></h1>
+            <p id="city">Amreli</p>
 
         </div>
         <div class="btm-part">
             <div class="left">
-                <h2>28%</h2>
-                <p>Humadity</p>
+                <h2 id="humidity">28%</h2>
+                <p >Humadity</p>
             </div>
             <div class="right">
-                <h2>18.5</h2>
-                <p>Wind Speed</p>
+                <h2 id="wind">18.5</h2>
+                <p >Wind Speed</p>
             </div>
         </div>
     </div>
@@ -98,10 +98,40 @@
 </body>
 
 <script>
+
  
-        let apikey = "212e8ad835689b622acf9b0761c0c628"
-        let api =` https://api.openweathermap.org/data/2.5/weather?q=surat&appid=${apikey}`
-    console.log(api );
+        // let apikey = "212e8ad835689b622acf9b0761c0c628"
+        // let New  = `https://api.openweathermap.org/data/2.5/weather?lat=44.34&lon=10.99&appid=${apikey}`;
+
+        // const Weather = () =>{
+            
+            
+        // }
+
+           let searchinp = document.querySelector("input");
+        let serchbtn = document.querySelector("#srhbtn");
+        let apikey = "e10d71428413d1d641987ff9efc58b97";
+
+        let apiid = "https://api.openweathermap.org/data/2.5/weather?&units=metric&q=";
+
+
+
+        async function weather(city){
+            const res = await fetch(apiid + city + `&appid=${apikey}`)
+
+            const result = await res.json()
+            console.log(result)
+
+            document.querySelector("#city").innerHTML = result.name
+            document.querySelector("#temp").innerHTML = Math.round(result.main.temp) + "°C"
+            document.querySelector("#humidity").innerHTML = result.main.humidity + " %";
+            document.querySelector("#wind").innerHTML = result.wind.speed + " Km/h";
+        }
+
+
+        serchbtn.addEventListener("click",()=>{
+            weather(searchinp.value)
+        })
     
 </script>
 

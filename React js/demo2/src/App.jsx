@@ -6,7 +6,9 @@ import React from 'react'
 // import FunState from './State/FunState'
 // import Form from './FormHandling/form'
 // import Demoform from './FormHandling/Demoform'
-// import ProductAxios from './Effect/ProductAxios'
+import ProductAxios from './Effect/ProductAxios'
+import DummyAxios from './Effect/DummyAxios'
+import Index from './Website'
 // import GamingAxios from './Effect/GamingAxios'
 // import Tailwind from './Tail/Tailwind'
 // import Header from './Website/Header'
@@ -54,6 +56,8 @@ function App() {
         {/* <GamingAxios /> */}
         {/* <Tailwind /> */}
         <Index />
+
+        {/* <DummyAxios /> */}
         
 
         

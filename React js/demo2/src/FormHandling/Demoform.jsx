@@ -16,8 +16,6 @@ function Demoform() {
             [event.target.name] : event.target.value
         })
         console.log(Form);
-        
-
     }
 
 

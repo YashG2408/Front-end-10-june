@@ -1,4 +1,5 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom'
 
 function Header() {
   return (
@@ -12,23 +13,23 @@ function Header() {
     </a>
     <nav id="navmenu" className="navmenu">
       <ul>
-        <li><a href="index.html" className="active">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="destinations.html">Destinations</a></li>
-        <li><a href="tours.html">Tours</a></li>
-        <li><a href="gallery.html">Gallery</a></li>
-        <li><a href="blog.html">Blog</a></li>
+        <li><NavLink to="/" className="active">Home</NavLink></li>
+        <li><NavLink to="/about">About</NavLink></li>
+        <li><NavLink to="/dest">Destinations</NavLink></li>
+        <li><NavLink to="/tours">Tours</NavLink></li>
+        <li><NavLink to="/gallery">Gallery</NavLink></li>
+        <li><NavLink to="/blog">Blog</NavLink></li>
         <li className="dropdown"><a href="#"><span>More Pages</span> <i className="bi bi-chevron-down toggle-dropdown" /></a>
           <ul>
-            <li><a href="destination-details.html">Destination Details</a></li>
-            <li><a href="tour-details.html">Tour Details</a></li>
-            <li><a href="booking.html">Booking</a></li>
-            <li><a href="testimonials">Testimonials</a></li>
-            <li><a href="faq.html">Frequently Asked Questions</a></li>
-            <li><a href="blog-details.html">Blog Details</a></li>
-            <li><a href="terms.html">Terms</a></li>
-            <li><a href="privacy.html">Privacy</a></li>
-            <li><a href="404.html">404</a></li>
+            <li><NavLink to="/destd">Destination Details</NavLink></li>
+            <li><NavLink to="/toursd">Tour Details</NavLink></li>
+            <li><NavLink to="/booking">Booking</NavLink></li>
+            <li><NavLink to="/test">Testimonials</NavLink></li>
+            <li><NavLink to="/faq">Frequently Asked Questions</NavLink></li>
+            <li><NavLink to="/blogd">Blog Details</NavLink></li>
+            <li><NavLink to="/terms">Terms</NavLink></li>
+            <li><NavLink to="/privacy">Privacy</NavLink></li>
+            <li><NavLink to="*">404</NavLink></li>
           </ul>
         </li>
         {/* <li className="dropdown"><a href="#"><span>Dropdown</span> <i className="bi bi-chevron-down toggle-dropdown" /></a>
@@ -48,7 +49,7 @@ function Header() {
             <li><a href="#">Dropdown 4</a></li>
           </ul>
         </li> */}
-        <li><a href="contact.html">Contact</a></li>
+        <li><NavLink to="/contact">Contact</NavLink></li>
       </ul>
       <i className="mobile-nav-toggle d-xl-none bi bi-list" />
     </nav>

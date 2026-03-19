@@ -1,0 +1,96 @@
+{
+  "tours": [
+    {
+      "id": "1",
+      "img": "https://indiatourbycaranddriver.com/wp-content/uploads/2024/05/3-11.jpg",
+      "title": "Manali Car with drive",
+      "desc": "Experience the harmony of ancient traditions and modern elegance in Japan's most sacred spaces.",
+      "price": 2300
+    },
+    {
+      "id": "2",
+      "img": "https://i.pinimg.com/736x/7c/96/2c/7c962c554c07f7c7c4f13223f9a057fd.jpg",
+      "title": "Haridwar Car with drive",
+      "desc": "Experience the harmony of ancient traditions and modern elegance in Japan's most sacred spaces.",
+      "price": 2300
+    },
+    {
+      "id": "3",
+      "img": "https://media.istockphoto.com/id/543179390/photo/golden-temple-the-main-sanctuary-of-sikhs-amritsar-india.jpg?s=612x612&w=0&k=20&c=s4bOWzg0e0ecBBPmuzIEShhrmMWFE16cnYlAZ7Nfdeg=",
+      "title": "Golden Temple Car with drive",
+      "desc": "Experience the harmony of ancient traditions and modern elegance in Japan's most sacred spaces.",
+      "price": 2300
+    },
+    {
+      "id": "4",
+      "img": "https://www.ekashmirtourism.com/wp-content/uploads/2022/08/Shikara-boats-floating-on-Dal-Lake.jpg",
+      "title": "Manali Car with drive",
+      "desc": "Experience the harmony of ancient traditions and modern elegance in Japan's most sacred spaces.",
+      "price": 2300
+    },
+    {
+      "id": "5",
+      "img": "https://www.touracle.in/wp-content/uploads/2025/01/kerala.webp",
+      "title": "Kerala Car with drive",
+      "desc": "Experience the harmony of ancient traditions and modern elegance in Japan's most sacred spaces.",
+      "price": 2300
+    },
+    {
+      "id": "6",
+      "img": "https://t3.ftcdn.net/jpg/13/94/27/06/360_F_1394270673_sUiJCNB2m0i0Pi3M3XZCEjBRg1Qvz5Mw.jpg",
+      "title": "Manali Car with drive",
+      "desc": "Experience the harmony of ancient traditions and modern elegance in Japan's most sacred spaces.",
+      "price": 2300
+    }
+  ],
+  "admin": [
+    {
+      "id": "1",
+      "name": "admin1",
+      "email": "admin@gmail.com",
+      "password": 123
+    },
+    {
+      "id": "2",
+      "name": "admin2",
+      "email": "admin2@gmail.com",
+      "password": 1234
+    },
+    {
+      "id": "3",
+      "name": "admin3",
+      "email": "admin3@gmail.com",
+      "password": 12345
+    }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "name": "Yash",
+      "email": "yash@gmail.com",
+      "status": "unblock",
+      "password": "12345"
+    },
+    {
+      "id": "2",
+      "name": "Nirav",
+      "email": "nirav@gmail.com",
+      "status": "unblock",
+      "password": "123456"
+    },
+    {
+      "id": "3",
+      "name": "Surya",
+      "email": "surya@gmail.com",
+      "status": "unblock",
+      "password": "1234567"
+    },
+    {
+      "id": "1766771164058",
+      "name": "Yash",
+      "email": "yash@gmail.com",
+      "password": "12345",
+      "status": "unblock"
+    }
+  ]
+}
